@@ -1,0 +1,74 @@
+﻿@using RepositoryModel.Models
+@model Normal_Room
+@{
+    Layout = "_HotelManagerDashboardLayout";
+
+}
+
+<style>
+    input {
+        background-color: transparent;
+        font-size: 25px;
+    }
+
+    label {
+        font-size: 20px;
+    }
+</style>
+
+<div class="bg-secondary rounded h-100 p-4" id="formDetails">
+    <div class="row">
+        <div class="col-md-9">
+            <h4>Add Room</h4>
+            <form method="post" asp-action="AddRoom" asp-controller="HotelManger" >
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <div class="form-group d-flex m-3">
+                    <label  class="col-lg-4"asp-for="@Model.Room.Room_Num" control-label">  Number</label>
+                    <input asp-for="@Model.Room.Room_Num" class=" form-control"  />
+                    <span asp-validation-for="@Model.Room.Room_Num" class="text-danger"></span>
+                </div>
+                <div class="form-group d-flex m-3">
+                    <label  class="col-lg-4"asp-for="@Model.Room.Description" control-label"> Description</label>
+                    <input asp-for="@Model.Room.Description" class="form-control"  />
+                    <span asp-validation-for="@Model.Room.Description" class="text-danger"></span>
+                </div>
+                <div class="form-group d-flex m-3">
+                    <label  class="col-lg-4"asp-for="@Model.Room.NumOfAdults" class="col-4 control-label">Number of adults</label>
+                    <input asp-for="@Model.Room.NumOfAdults" class="form-control"  />
+                    <span asp-validation-for="@Model.Room.NumOfAdults" class="text-danger"></span>
+                </div>
+               
+                <div class="form-group d-flex m-3">
+                    <label  class="col-lg-4"asp-for="@Model.Room.Cost_Per_Night" class="col-4 control-label">Cost per night</label>
+                    <input asp-for="@Model.Room.Cost_Per_Night" class="form-control"  />
+                    <span asp-validation-for="@Model.Room.Cost_Per_Night" class="text-danger"></span>
+                </div>
+
+                <div class="form-group d-flex m-3">
+               <label   class="col-4 control-label">Type</label>
+
+                    <select class="select" asp-for="Type_Of_Room"   >
+                       
+                        <option value="1">Single</option>
+                        <option value="2">Double</option>
+                        <option value="3">Triple</option>
+                        <option value="4">Fourth</option>
+                    </select>
+                    <span asp-validation-for="Type_Of_Room" class="text-danger"></span>
+                </div>
+                <div class="form-group d-flex m-3">
+
+                    <label class="col-lg-4" asp-for="@Model.Room.images" for="formFileMultiple" class="form-label">Image</label>
+                    <input asp-for="@Model.Room.images" class="form-control" type="file" id="formFileMultiple" multiple />
+                        <span asp-validation-for="@Model.Room.images" class="text-danger"></span>
+                    
+                </div>
+               
+                <div class="form-group">
+                    <input type="submit" value="Add" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

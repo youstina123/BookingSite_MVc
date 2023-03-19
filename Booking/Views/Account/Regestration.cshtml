@@ -1,0 +1,14 @@
+﻿@using BookingWebSite.ViewModel
+@model RegestrationViewModel
+
+@{
+   // Layout = "_RegestrationForm";
+    ViewData["Title"] = "Regestration";
+}
+
+<partial name="_RegestrationForm" model="@Model"/>
+
+@section Scripts {
+    {await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+

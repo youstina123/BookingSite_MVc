@@ -1,0 +1,43 @@
+﻿@using RepositoryModel.Models
+@model List<Suit>
+
+
+@{
+    Layout = "_HotelManagerDashboardLayout";
+   
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 col-xl-2 m-3 ">
+        </div>
+    </div>
+</div>
+<!-- Table Start -->
+<div class="container-fluid pt-4 px-4 ">
+    <div class="row g-4">
+        @foreach (var item in Model)
+        {
+            <div class="col-sm-12 col-xl-4" id="deleteHotel">
+                <div class="card" style="width: 18rem;">
+                    @foreach (var i in item.Room.images)
+                    {
+                        <img src="/Images/@i.Name" class="card-img-top" alt="...">
+                    }
+                    <div class="card-body">
+                        <h5 class="card-title"></h5>
+                        <p class="card-text">@item.Room.Description</p>
+                        <p class="card-text">Number of Rooms:@item.Num_Of_Rooms</p>
+                        <span class="justify-content-between">
+                            <a href="~/HotelManger/Updatesuits/@item.RoomId" class="btn btn-primary"> Update</a>
+                            <a href="~/HotelManger/DeleteSuit/@item.RoomId" class="btn btn-primary"> Delete</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        }
+
+    </div>
+</div>
+
+
