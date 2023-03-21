@@ -14,22 +14,23 @@ namespace RepositoryEF.Repositories
       
 
         public ApplicationDbContext context;
-       public IBaseRepository<Hotel> Hotels { get;}
-       public IBaseRepository<Hotel_Manager> HotelManagers { get;}
+		public IBaseRepository<AppUser> AppUsers { get; private set; }
+
+		public IBaseRepository<Hotel> Hotels { get; private set; }
+       public IBaseRepository<Hotel_Manager> HotelManagers { get; private set; }
 
         public UnitOfWorkRepository(ApplicationDbContext context)
         {
             this.context = context;
-            Hotels = new BaseRepository<Hotel>(context);
-            HotelManagers = new BaseRepository<Hotel_Manager>(context);
-            // UnitOfWork=new IBaseRepository<UnitOfWork>(context);
+            Hotels = new BaseRepository<Hotel>(this.context);
+            HotelManagers = new BaseRepository<Hotel_Manager>(this.context);
+			AppUsers = new BaseRepository<AppUser>(this.context);
 
-        }
-        //public IBaseRepository<Hotel> Hotels { get; private set; }
-        //public IBaseRepository<Hotel_Manager> HotelManagers { get; private set; }
-        public int Complete()
+		}
+		
+		public void Complete()
         {
-            return context.SaveChanges();
+             context.SaveChanges();
         }
 
         public void Dispose()

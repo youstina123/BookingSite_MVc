@@ -1,3 +1,4 @@
+using Booking.Hubs;
 using BookingLibrary.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -49,6 +50,7 @@ namespace Booking
             app.UseRouting();
             app.UseAuthentication();
             app.UseAuthorization();
+            app.MapHub<ReviewHub>("/Review");
 
             app.MapControllerRoute(
                 name: "default",

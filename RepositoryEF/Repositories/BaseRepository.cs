@@ -10,25 +10,29 @@ namespace RepositoryPatternWithUOW.EF.Repository
     public class BaseRepository<T> : IBaseRepository<T> where T : class
     {
         ApplicationDbContext context;
-        //IUnitOfWorkRepository unitOfWork;
+        IUnitOfWorkRepository unitOfWork;
 
         public BaseRepository(ApplicationDbContext context)
         {
             this.context = context;
         }
 
-        //public BaseRepository(ApplicationDbContext context,IUnitOfWorkRepository unitOfWork)
-        //{
-        //    this.context = context;
-        //    this.unitOfWork = unitOfWork;
-        //}
+        public BaseRepository(ApplicationDbContext context, IUnitOfWorkRepository unitOfWork)
+        {
+            this.context = context;
+            this.unitOfWork = unitOfWork;
+        }
 
         public T GetByID(int id)
         {
             return context.Set<T>().Find(id);
         }
+		public T GetByIDString(string id)
+		{
+			return context.Set<T>().Find(id);
+		}
 
-        public T Add(T entity)
+		public T Add(T entity)
         {
             context.Set<T>().Add(entity);
             context.SaveChanges();
@@ -49,12 +53,14 @@ namespace RepositoryPatternWithUOW.EF.Repository
         }
 
       
-        public T Update(T entity)
+        public void Update(T entity)
         {
-            context.Update(entity);
+			//context.Set<T>().Attach(entity);
+			//context.Entry(entity).State = EntityState.Modified;
+			context.Update(entity);
             context.SaveChanges();
-
-            return entity;
-        }
+			//unitOfWork.Complete();
+			//return entity;
+		}
     }
 }

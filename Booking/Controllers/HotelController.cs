@@ -130,6 +130,25 @@ namespace Booking.Controllers
             return PartialView("_AdvancedSearch", avaliblehotel);
         }
 
-        //public IActionResult FilterSearch()
-    }
+		[HttpPost]
+		public IActionResult FilterSearch(FiltersearchViewModel filtersearchViewModel)
+		{
+			List<int> hotelides = filtersearchViewModel.ides;
+			List<int> starlist = filtersearchViewModel.stars;
+			List<Hotel> hotelsfilter = new List<Hotel>();
+			foreach (var hotelid in hotelides)
+			{
+				Hotel hotel = context.Hotels.FirstOrDefault(h => h.Id == hotelid);
+				foreach (var star in starlist)
+				{
+
+					if (Convert.ToInt32(hotel.Rate) == star)
+					{
+						hotelsfilter.Add(hotel);
+					}
+				}
+			}
+			return PartialView("_AdvancedSearch", hotelsfilter);
+		}
+	}
 }

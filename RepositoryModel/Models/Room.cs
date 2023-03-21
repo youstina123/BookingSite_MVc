@@ -10,7 +10,7 @@ namespace BookingLibrary.Models
         public string Description { get; set; }
         public int Room_Num { get; set; }
         
-        [Unique]
+       // [Unique]
         public int NumOfAdults { get; set; }
         public double Cost_Per_Night { get; set; }
 

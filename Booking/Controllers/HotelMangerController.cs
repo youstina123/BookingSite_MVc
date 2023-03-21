@@ -1,4 +1,5 @@
-﻿using BookingLibrary.Models;
+﻿using Booking.ViewModel;
+using BookingLibrary.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using RepositoryEF;
@@ -29,44 +30,52 @@ namespace Booking.Controllers
         }
 
         [HttpPost]
-        public IActionResult AddRoom(Normal_Room normal_Room)
+        public IActionResult AddRoom(NormalRoomViewModel normal_Room)
         {
             string nameM= User.Identity.Name.ToString();
 
             int id = context.Hotel_Managers.Include(h => h.AppUser).Where(a => a.AppUser.UserName == nameM).Select(a => a.HotelId).FirstOrDefault().Value;
-            Normal_Room nRoom = new Normal_Room();
 
             Room room = new Room();
+
             room.HotelId= id;
-            room.NumOfAdults = normal_Room.Room.NumOfAdults;
-            room.Room_Num = normal_Room.Room.Room_Num;
-            room.Cost_Per_Night = normal_Room.Room.Cost_Per_Night;
-            room.Description = normal_Room.Room.Description;
-            
-
-            switch (normal_Room.Type_Of_Room.ToString())
-            {
-                case "Single": { normal_Room.Type_Of_Room = Type_Of_Room.Single; break; }
-
-                case "Double": { normal_Room.Type_Of_Room = Type_Of_Room.Double; break; }
-
-                case "Triple": { normal_Room.Type_Of_Room = Type_Of_Room.Triple; break; }
-
-                case "Fourth": { normal_Room.Type_Of_Room = Type_Of_Room.Fourth; break; }
-
-            }
-
-            room.images = normal_Room.Room.images;
+            room.NumOfAdults = normal_Room.NumOfAdults;
+            room.Room_Num = normal_Room.Room_Num;
+            room.Cost_Per_Night = normal_Room.Cost_Per_Night;
+            room.Description = normal_Room.Description;
             room.ISavailable = true;
             room.IsNormalRoom = true;
+
             context.Rooms.Add(room);
             context.SaveChanges();
 
+            Normal_Room nRoom = new Normal_Room();
+            int idRoom = context.Rooms.Where(r => r.Room_Num == normal_Room.Room_Num && r.HotelId == id).Select(r => r.Id).FirstOrDefault();
 
-            int idRoom = context.Rooms.Where(r => r.Room_Num == normal_Room.Room.Room_Num).Select(r => r.Id).FirstOrDefault();
             nRoom.RoomId = idRoom;
+            switch (normal_Room.Type_Of_Room.ToString())
+            {
+                case "Single": { nRoom.Type_Of_Room = Type_Of_Room.Single; break; }
+
+                case "Double": { nRoom.Type_Of_Room = Type_Of_Room.Double; break; }
+
+                case "Triple": { nRoom.Type_Of_Room = Type_Of_Room.Triple; break; }
+
+                case "Fourth": { nRoom.Type_Of_Room = Type_Of_Room.Fourth; break; }
+
+            }
             context.normal_Rooms.Add(nRoom);
             context.SaveChanges();
+
+            foreach (var RoomImage in normal_Room.image)
+            {
+                image image = new image();
+                image.Name = RoomImage;
+                image.RoomId = idRoom;
+                context.Add(image);
+                context.SaveChanges();
+            }
+
             return RedirectToAction("HotelRooms");
         }
 
@@ -124,32 +133,43 @@ namespace Booking.Controllers
         }
 
         [HttpPost]
-        public IActionResult AddSuit(Suit suit)
+        public IActionResult AddSuit(SuitViewModel Rooms)
         {
             string nameM = User.Identity.Name.ToString();
             int id = context.Hotel_Managers.Include(h => h.AppUser).Where(a => a.AppUser.UserName == nameM).Select(a => a.HotelId).FirstOrDefault().Value;
 
-            Suit AddSuit = new Suit();
+         
+			Room room = new Room();
 
-            AddSuit.Room.NumOfAdults = suit.Room.NumOfAdults;
-            AddSuit.Room.Room_Num = suit.Room.Room_Num;
-            AddSuit.Room.Cost_Per_Night = suit.Room.Cost_Per_Night;
-            AddSuit.Room.Description = suit.Room.Description;
-            foreach (var item in AddSuit.Room.images)
+			room.HotelId = id;
+			room.NumOfAdults = Rooms.NumOfAdults;
+			room.Room_Num = Rooms.Room_Num;
+			room.Cost_Per_Night = Rooms.Cost_Per_Night;
+			room.Description = Rooms.Description;
+
+			//room.images = Rooms.images;
+			room.ISavailable = true;
+			room.IsNormalRoom = false;
+			context.Rooms.Add(room);
+			context.SaveChanges();
+
+			Suit AddSuit = new Suit();
+			int RoomID = context.Rooms.Where(R => R.Room_Num == Rooms.Room_Num && R.HotelId == id).Select(r => r.Id).FirstOrDefault();
+
+            AddSuit.RoomId = RoomID;
+            AddSuit.Num_Of_Rooms = Rooms.Num_Of_Rooms;
+			context.Suits.Add(AddSuit);
+            context.SaveChanges();
+
+            foreach (var RoomImage in Rooms.image)
             {
-                item.Name = suit.Room.images.ToString();
-
+                image image = new image();
+                image.Name = RoomImage;
+                image.RoomId = RoomID;
+                context.Add(image);
+                context.SaveChanges();
             }
-            AddSuit.Room.ISavailable = true;
-            AddSuit.Room.IsNormalRoom = false;
-            AddSuit.Num_Of_Rooms = suit.Num_Of_Rooms;
 
-            context.Suits.Add(AddSuit);
-            context.SaveChanges();
-
-
-            AddSuit.Room.HotelId = id;
-            context.SaveChanges();
             return RedirectToAction("HotelSuits");
         }
 

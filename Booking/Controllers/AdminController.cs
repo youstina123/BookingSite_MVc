@@ -4,17 +4,21 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using RepositoryEF;
+using RepositoryPatternWithUOW.Core.Repository;
 
 namespace Booking.Controllers
 {
+    
     public class AdminController : Controller
     {
+        private readonly IUnitOfWorkRepository unitOfWorkRepository;
         ApplicationDbContext context = new ApplicationDbContext();
         UserManager<AppUser> userManager;
 
-        public AdminController(UserManager<AppUser> userManager)
+        public AdminController(UserManager<AppUser> userManager, IUnitOfWorkRepository unitOfWorkRepository)
         {
             this.userManager = userManager;
+            this.unitOfWorkRepository = unitOfWorkRepository;
         }
         
 
@@ -40,8 +44,9 @@ namespace Booking.Controllers
 
             foreach(var item in hotelMangersIds)
             {
-                AppUser hotelM = context.AppUsers.FirstOrDefault(m => m.Id == item);
-                hotelManger.Add(hotelM);
+                //AppUser hotelM = unitOfWorkRepository.AppUsers.GetByIDString(item);
+				AppUser hotelM = context.AppUsers.FirstOrDefault(m => m.Id == item);
+				hotelManger.Add(hotelM);
             }
 
             foreach (var item in hotelManger)
@@ -115,25 +120,27 @@ namespace Booking.Controllers
         [HttpGet]
         public IActionResult UpdateHotel(int id)
         {
-
-            Hotel hotel = context.Hotels.FirstOrDefault(h=>h.Id==id);
+            Hotel hotel=unitOfWorkRepository.Hotels.GetByID(id);
+           // Hotel hotel = context.Hotels.FirstOrDefault(h=>h.Id==id);
             
             return View(hotel) ;
         }
            [HttpPost]
         public IActionResult UpdateHotel(Hotel newHotel,int id)
         {
-            Hotel hotel = context.Hotels.FirstOrDefault(h => h.Id == id);
+            //Hotel hotel = context.Hotels.FirstOrDefault(h => h.Id == id);
 
-            hotel.Name=newHotel.Name ;
-            hotel.Street=newHotel.Street ;
-            hotel.Country=newHotel.Country ;
-            hotel.City=newHotel.City  ;
-            hotel.Description= newHotel.Description  ;
-            hotel.Rate= newHotel.Rate;
-
-            context.SaveChanges();
-            return RedirectToAction("AdminHotels");
+			Hotel hotel = unitOfWorkRepository.Hotels.GetByID(id);
+          
+            //hotel.Name = newHotel.Name;
+            //hotel.Street = newHotel.Street;
+            //hotel.Country = newHotel.Country;
+            //hotel.City = newHotel.City;
+            //hotel.Description = newHotel.Description;
+            //hotel.Rate = newHotel.Rate;
+            unitOfWorkRepository.Hotels.Update(newHotel);
+			//context.SaveChanges();
+			return RedirectToAction("AdminHotels");
         }
         [HttpGet]
         public async Task<IActionResult> HotelManagerRoleConfirmation(string id)

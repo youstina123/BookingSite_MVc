@@ -1,6 +1,6 @@
 ﻿
 @using RepositoryModel.Models
-@model Suit
+@model SuitViewModel
 @{
     Layout = "_HotelManagerDashboardLayout";
     
@@ -25,19 +25,19 @@
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
                 <div class="form-group d-flex m-3">
-                    <label class="col-lg-4" asp-for="@Model.Room.Room_Num" control-label"> Number</label>
-                    <input asp-for="@Model.Room.Room_Num" class=" form-control"  />
-                    <span asp-validation-for="@Model.Room.Room_Num" class="text-danger"></span>
+                    <label class="col-lg-4" asp-for="@Model.Room_Num" control-label"> Number</label>
+                    <input asp-for="@Model.Room_Num" class=" form-control"  />
+                    <span asp-validation-for="@Model.Room_Num" class="text-danger"></span>
                 </div>
                 <div class="form-group d-flex m-3">
-                    <label  class="col-lg-4" asp-for="@Model.Room.Description" control-label"> Description</label>
-                    <input asp-for="@Model.Room.Description" class="form-control"  />
-                    <span asp-validation-for="@Model.Room.Description" class="text-danger"></span>
+                    <label  class="col-lg-4" asp-for="@Model.Description" control-label"> Description</label>
+                    <input asp-for="@Model.Description" class="form-control"  />
+                    <span asp-validation-for="@Model.Description" class="text-danger"></span>
                 </div>
                 <div class="form-group d-flex m-3">
-                    <label  class="col-lg-4" asp-for="@Model.Room.NumOfAdults" class="col-4 control-label">Number of Adults</label>
-                    <input asp-for="@Model.Room.NumOfAdults" class="form-control"  />
-                    <span asp-validation-for="@Model.Room.NumOfAdults" class="text-danger"></span>
+                    <label  class="col-lg-4" asp-for="@Model.NumOfAdults" class="col-4 control-label">Number of Adults</label>
+                    <input asp-for="@Model.NumOfAdults" class="form-control"  />
+                    <span asp-validation-for="@Model.NumOfAdults" class="text-danger"></span>
                 </div>
                 <div class="form-group d-flex m-3">
                     <label  class="col-lg-4" asp-for="@Model.Num_Of_Rooms" class="col-4 control-label">Number of rooms</label>
@@ -46,14 +46,14 @@
                 </div>
 
                 <div class="form-group d-flex m-3">
-                    <label  class="col-lg-4" asp-for="@Model.Room.Cost_Per_Night" class="col-4 control-label">Cost per night</label>
-                    <input asp-for="@Model.Room.Cost_Per_Night" class="form-control"  />
-                    <span asp-validation-for="@Model.Room.Cost_Per_Night" class="text-danger"></span>
+                    <label  class="col-lg-4" asp-for="@Model.Cost_Per_Night" class="col-4 control-label">Cost per night</label>
+                    <input asp-for="@Model.Cost_Per_Night" class="form-control"  />
+                    <span asp-validation-for="@Model.Cost_Per_Night" class="text-danger"></span>
                 </div>
                 <div class="form-group d-flex m-3">
-                    <label  class="col-lg-4" asp-for="@Model.Room.images" for="formFileMultiple" class="form-label"> Image</label>
-                    <input asp-for="@Model.Room.images" class="form-control" type="file" id="formFileMultiple" multiple />
-                    <span asp-validation-for="@Model.Room.images" class="text-danger"></span>
+                    <label  class="col-lg-4" asp-for="@Model.image" for="formFileMultiple" class="form-label" > Image</label>
+                    <input asp-for="@Model.image" class="form-control" type="file" id="formFileMultiple" multiple />
+                    <span asp-validation-for="@Model.image" class="text-danger"></span>
                 </div>
 
                 <div class="form-group">

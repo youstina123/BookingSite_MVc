@@ -16,31 +16,36 @@ namespace Booking.Controllers
 
 		public IActionResult getPhotos()
 		{
-			Hotel hotel = context.Hotels.Where(e => e.Id == 3).Include(d => d.reviews).ThenInclude(c => c.Customer).ThenInclude(a => a.AppUser).FirstOrDefault();
-			List<string> photos = context.image.Where(e => e.HotelId == 3).Select(e => e.Name).ToList();
+            Hotel hotel = context.Hotels.Where(e => e.Id == 1).FirstOrDefault();
+            List<string> photos = context.image.Where(e => e.HotelId == 1).Select(e => e.Name).ToList();
+            List<Review> reviews = context.Reviews.Where(i => i.IsDeleted == false).OrderByDescending(d => d.Id).Take(6).Include(c => c.Customer).ThenInclude(a => a.AppUser).ToList();
 
-			List<Normal_Room> Rooms = new List<Normal_Room>();
-			for (int i = 0; i < 4; i++)
-			{
-				Normal_Room room = context.normal_Rooms.Include(e => e.Room).ThenInclude(e => e.images).FirstOrDefault(e => e.Room.HotelId == 3 && ((int)e.Type_Of_Room) == i);
-				if (room != null)
-				{
-					Rooms.Add(room);
-				}
-			}
+            List<Normal_Room> Rooms = new List<Normal_Room>();
+            for (int i = 0; i < 4; i++)
+            {
+                Normal_Room room = context.normal_Rooms.Include(e => e.Room).ThenInclude(e => e.images).FirstOrDefault(e => e.Room.HotelId == 1 && ((int)e.Type_Of_Room) == i);
+                if (room != null)
+                {
+                    Rooms.Add(room);
+                }
+            }
+            Suit suit = context.Suits.Include(e => e.Room).ThenInclude(e => e.images).FirstOrDefault(e => e.Room.HotelId == 1);
 
-			string userName = "";
-			if (Request.Cookies["UserLogin"] != null)
-			{
-				//= Request.Cookies["UserLogin"]["Name"].ToString();
-				userName = User.Identity.Name.ToString();
-			}
-			ViewBag.UserName = userName;
-			ViewData["photo"] = photos;
-			ViewData["normal"] = Rooms;
+            string userName = "";
+            if (User.Identity.IsAuthenticated)
+            {
+                userName = User.Identity.Name.ToString();
+                ViewData["User"] = userName;
+            }
 
-			return View(hotel);
-		}
+            ViewData["Reviews"] = reviews;
+            ViewData["photo"] = photos;
+            ViewData["normal"] = Rooms;
+            ViewData["Suit"] = suit;
+
+
+            return View(hotel);
+        }
 		public IActionResult Index()
 		{
 			return View();

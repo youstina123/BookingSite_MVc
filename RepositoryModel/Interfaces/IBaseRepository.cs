@@ -9,12 +9,14 @@ namespace RepositoryModel.Interfaces
     public interface IBaseRepository<T> where T : class
     {
         T GetByID(int id);
+		T GetByIDString(string id);
 
-        IEnumerable<T> GetAll();
+
+		IEnumerable<T> GetAll();
 
         T Add(T entity);
 
-        T Update(T entity);
+        void Update(T entity);
 
         void Delete(T entity);
 

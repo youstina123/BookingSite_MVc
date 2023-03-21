@@ -15,6 +15,10 @@ namespace BookingLibrary.Models
         [ForeignKey("AppUser")]
         public string? AppUserId { get; set; }
         public AppUser? AppUser { get; set; }
+
+        [ForeignKey("Room")]
+        public int? RoomId { get; set; }
+        public Room? Room { get; set; }
         public bool IsDeleted { get; set; }
     }
 }

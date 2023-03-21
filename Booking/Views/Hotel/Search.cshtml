@@ -2,7 +2,10 @@
 @{
 	ViewData["Title"] = "Search";
 	Layout = "~/Views/Shared/_HotelLayout.cshtml";
+	//SelectList dept = new SelectList(ViewBag.hotels, "Id", "Name");
+	//List<Hotel> list = ViewBag.hotels;
 }
+
 
 
 <div class="col-lg-9">
@@ -82,36 +85,54 @@
 	</div>
 	<div class="sidebar-wrap bg-light ftco-animate">
 		<h3 class="heading mb-4">Star Rating</h3>
-		<form method="post" class="star-rating" id="rating">
+		<form class="star-rating" id="rating">
 			<div class="form-check">
-				<input type="checkbox" class="form-check-input" id="exampleCheck1" value="5">
-				<label class="form-check-label" for="exampleCheck1">
+				<input type="checkbox" class="form-check-input" id="fivestar" name="stars" value="5">
+				<label class="form-check-label" for="fivestar">
 					<p class="rate"><span><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i></span></p>
 				</label>
 			</div>
 			<div class="form-check">
-				<input type="checkbox" class="form-check-input" id="exampleCheck1" value="4">
-				<label class="form-check-label" for="exampleCheck1">
+				<input type="checkbox" class="form-check-input" id="fourstar" name="stars" value="4">
+				<label class="form-check-label" for="fourstar">
 					<p class="rate"><span><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star-o"></i></span></p>
 				</label>
 			</div>
 			<div class="form-check">
-				<input type="checkbox" class="form-check-input" id="exampleCheck1" value="3">
+				<input type="checkbox" class="form-check-input" id="exampleCheck1" name="stars" value="3">
 				<label class="form-check-label" for="exampleCheck1">
 					<p class="rate"><span><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star-o"></i><i class="icon-star-o"></i></span></p>
 				</label>
 			</div>
 			<div class="form-check">
-				<input type="checkbox" class="form-check-input" id="exampleCheck1" value="2">
+				<input type="checkbox" class="form-check-input" id="exampleCheck1" name="stars" value="2">
 				<label class="form-check-label" for="exampleCheck1">
 					<p class="rate"><span><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star-o"></i><i class="icon-star-o"></i><i class="icon-star-o"></i></span></p>
 				</label>
 			</div>
 			<div class="form-check">
-				<input type="checkbox" class="form-check-input" id="exampleCheck1" value="1">
+				<input type="checkbox" class="form-check-input" id="exampleCheck1" name="stars" value="1">
 				<label class="form-check-label" for="exampleCheck1">
 					<p class="rate"><span><i class="icon-star"></i><i class="icon-star-o"></i><i class="icon-star-o"></i><i class="icon-star-o"></i><i class="icon-star-o"></i></span></p>
 				</label>
+			</div>
+			@if (Model == null)
+			{
+				@foreach (Hotel item in ViewBag.hotellist)
+				{
+					<input type="hidden" name="ides" value="@item.Id" />
+				}
+			}
+			else
+			{
+				@foreach (Hotel item in ViewBag.hotels)
+				{
+					<input type="hidden" name="ides" value="@item.Id" />
+				}
+			}
+
+			<div class="form-group">
+				<input type="button" onclick="Filter()" value="Search" class="btn btn-primary py-3 px-5">
 			</div>
 		</form>
 	</div>
@@ -125,11 +146,12 @@
 			console.log("result");
 
 			var valdata = $("#advancedsearch").serialize();
+			console.log(valdata)
 			$.ajax(
 				{
 					url: "/Hotel/AdvancedSearch/",
 					type: "POST",
-					data:valdata,
+					data: valdata,
 					success: function (result) {
 						$("#partialhotelcard").html(result);
 					}
@@ -137,13 +159,22 @@
 
 		}
 
-		$("#rating :checkbox").click(function () {
-				var arr = [];
-				$.each($("input[id='exampleCheck1']:checked"), function () {
-					arr.push($(this).val());
+		function Filter() {
+			console.log("result");
+
+			var valdata = $("#rating").serialize();
+			console.log(valdata)
+			$.ajax(
+				{
+					url: "/Hotel/FilterSearch/",
+					type: "POST",
+					data: valdata,
+					success: function (result) {
+						$("#partialhotelcard").html(result);
+					}
 				});
 
-		});
+		}
 
 	</script>
 }
