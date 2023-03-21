@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Downloads\\finalmerge\\finalmerge\\Booking\\Booking.csproj": {}
+    "C:\\Users\\Al Lewaa Company\\Desktop\\BookingWebSite\\Booking\\Booking.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Downloads\\finalmerge\\finalmerge\\Booking\\Booking.csproj": {
+    "C:\\Users\\Al Lewaa Company\\Desktop\\BookingWebSite\\Booking\\Booking.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Downloads\\finalmerge\\finalmerge\\Booking\\Booking.csproj",
+        "projectUniqueName": "C:\\Users\\Al Lewaa Company\\Desktop\\BookingWebSite\\Booking\\Booking.csproj",
         "projectName": "Booking",
-        "projectPath": "C:\\Users\\User\\Downloads\\finalmerge\\finalmerge\\Booking\\Booking.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Downloads\\finalmerge\\finalmerge\\Booking\\obj\\",
+        "projectPath": "C:\\Users\\Al Lewaa Company\\Desktop\\BookingWebSite\\Booking\\Booking.csproj",
+        "packagesPath": "C:\\Users\\Al Lewaa Company\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Al Lewaa Company\\Desktop\\BookingWebSite\\Booking\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Al Lewaa Company\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,15 +22,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\User\\Downloads\\finalmerge\\finalmerge\\RepositoryEF\\RepositoryEF.csproj": {
-                "projectPath": "C:\\Users\\User\\Downloads\\finalmerge\\finalmerge\\RepositoryEF\\RepositoryEF.csproj"
+              "C:\\Users\\Al Lewaa Company\\Desktop\\BookingWebSite\\RepositoryEF\\RepositoryEF.csproj": {
+                "projectPath": "C:\\Users\\Al Lewaa Company\\Desktop\\BookingWebSite\\RepositoryEF\\RepositoryEF.csproj"
               }
             }
           }
@@ -91,25 +86,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\User\\Downloads\\finalmerge\\finalmerge\\RepositoryEF\\RepositoryEF.csproj": {
+    "C:\\Users\\Al Lewaa Company\\Desktop\\BookingWebSite\\RepositoryEF\\RepositoryEF.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Downloads\\finalmerge\\finalmerge\\RepositoryEF\\RepositoryEF.csproj",
+        "projectUniqueName": "C:\\Users\\Al Lewaa Company\\Desktop\\BookingWebSite\\RepositoryEF\\RepositoryEF.csproj",
         "projectName": "RepositoryEF",
-        "projectPath": "C:\\Users\\User\\Downloads\\finalmerge\\finalmerge\\RepositoryEF\\RepositoryEF.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Downloads\\finalmerge\\finalmerge\\RepositoryEF\\obj\\",
+        "projectPath": "C:\\Users\\Al Lewaa Company\\Desktop\\BookingWebSite\\RepositoryEF\\RepositoryEF.csproj",
+        "packagesPath": "C:\\Users\\Al Lewaa Company\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Al Lewaa Company\\Desktop\\BookingWebSite\\RepositoryEF\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Al Lewaa Company\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -117,15 +108,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\User\\Downloads\\finalmerge\\finalmerge\\RepositoryModel\\RepositoryModel.csproj": {
-                "projectPath": "C:\\Users\\User\\Downloads\\finalmerge\\finalmerge\\RepositoryModel\\RepositoryModel.csproj"
+              "C:\\Users\\Al Lewaa Company\\Desktop\\BookingWebSite\\RepositoryModel\\RepositoryModel.csproj": {
+                "projectPath": "C:\\Users\\Al Lewaa Company\\Desktop\\BookingWebSite\\RepositoryModel\\RepositoryModel.csproj"
               }
             }
           }
@@ -171,25 +161,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\User\\Downloads\\finalmerge\\finalmerge\\RepositoryModel\\RepositoryModel.csproj": {
+    "C:\\Users\\Al Lewaa Company\\Desktop\\BookingWebSite\\RepositoryModel\\RepositoryModel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Downloads\\finalmerge\\finalmerge\\RepositoryModel\\RepositoryModel.csproj",
+        "projectUniqueName": "C:\\Users\\Al Lewaa Company\\Desktop\\BookingWebSite\\RepositoryModel\\RepositoryModel.csproj",
         "projectName": "RepositoryModel",
-        "projectPath": "C:\\Users\\User\\Downloads\\finalmerge\\finalmerge\\RepositoryModel\\RepositoryModel.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Downloads\\finalmerge\\finalmerge\\RepositoryModel\\obj\\",
+        "projectPath": "C:\\Users\\Al Lewaa Company\\Desktop\\BookingWebSite\\RepositoryModel\\RepositoryModel.csproj",
+        "packagesPath": "C:\\Users\\Al Lewaa Company\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Al Lewaa Company\\Desktop\\BookingWebSite\\RepositoryModel\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Al Lewaa Company\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -197,7 +183,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -237,7 +222,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

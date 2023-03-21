@@ -4,13 +4,16 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using RepositoryEF;
 using RepositoryModel.Models;
+using RepositoryPatternWithUOW.Core.Repository;
 
 namespace Booking.Controllers
 {
     public class HotelMangerController : Controller
     {
-        ApplicationDbContext context =new ApplicationDbContext();
-
+        ApplicationDbContext context = new ApplicationDbContext();
+       
+            
+        IUnitOfWorkRepository unitOfWorkRepository;
         public IActionResult HotelRooms()
         {
             List<Normal_Room> rooms = context.normal_Rooms.Where(r => r.Room.IsNormalRoom == true && r.Room.IsDeleted==false)
@@ -89,6 +92,8 @@ namespace Booking.Controllers
         [HttpGet]
         public IActionResult UpdateRoom(int id)
         {
+           // Normal_Room normal_Room = unitOfWorkRepository.NnormalRooms.Find(r => r.RoomId == id, new[] {"Room"});
+
             Normal_Room normal_Room = context.normal_Rooms.Include(r=>r.Room).FirstOrDefault(r => r.RoomId==id);
             return View(normal_Room);
         }
@@ -96,9 +101,11 @@ namespace Booking.Controllers
         [HttpPost]
         public IActionResult UpdateRoom(Normal_Room normal_Room, int id)
         {
-            Normal_Room oldRoom = context.normal_Rooms.Include(r=>r.Room).FirstOrDefault(r => r.RoomId == id);
+            //Normal_Room oldRoom = unitOfWorkRepository.NnormalRooms.Find(r => r.RoomId == id, new[] { "Room" });
 
-          
+            Normal_Room oldRoom = context.normal_Rooms.Include(r => r.Room).FirstOrDefault(r => r.RoomId == id);
+
+
 
             oldRoom.Room.Room_Num = normal_Room.Room.Room_Num;
             oldRoom.Room.Description = normal_Room.Room.Description;
@@ -117,8 +124,9 @@ namespace Booking.Controllers
 
             }
 
-            oldRoom.Room.ISavailable = true;
-            oldRoom.Room.IsDeleted = false;
+            normal_Room.Room.ISavailable = true;
+            normal_Room.Room.IsDeleted = false;
+           // unitOfWorkRepository.NnormalRooms.Update(normal_Room);
             context.SaveChanges();
             return RedirectToAction("HotelRooms");
         }

@@ -1,5 +1,6 @@
 ﻿using BookingLibrary.Models;
 using RepositoryModel.Interfaces;
+using RepositoryModel.Models;
 
 namespace RepositoryPatternWithUOW.Core.Repository
 {
@@ -8,7 +9,8 @@ namespace RepositoryPatternWithUOW.Core.Repository
         //IBaseRepository<UnitOfWork> BaseRepository { get; }
        IBaseRepository<AppUser> AppUsers { get; }
         IBaseRepository<Hotel> Hotels { get; }
-        IBaseRepository<Hotel_Manager> HotelManagers { get; }
+
+        IHotelManagerReprository HotelManagers { get; }
         void Complete();
     }
 }

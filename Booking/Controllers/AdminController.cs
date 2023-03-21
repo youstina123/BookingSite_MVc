@@ -12,7 +12,7 @@ namespace Booking.Controllers
     public class AdminController : Controller
     {
         private readonly IUnitOfWorkRepository unitOfWorkRepository;
-        ApplicationDbContext context = new ApplicationDbContext();
+        //ApplicationDbContext context = new ApplicationDbContext();
         UserManager<AppUser> userManager;
 
         public AdminController(UserManager<AppUser> userManager, IUnitOfWorkRepository unitOfWorkRepository)
@@ -27,25 +27,25 @@ namespace Booking.Controllers
             MessageDetailViewModel message; 
             List<MessageDetailViewModel> messagesList = new List<MessageDetailViewModel>();
 
+            List<Hotel> hotel = (List<Hotel>)unitOfWorkRepository.Hotels.FindAll(h => h.IsConfermed == false);
+           // List<Hotel> hotel = context.Hotels.Where(h=>h.IsConfermed==false).ToList();
 
-          
-
-            List<Hotel> hotel = context.Hotels.Where(h=>h.IsConfermed==false).ToList();
-
+            
             List<string> hotelMangersIds = new List<string>();
 
             foreach(var item in hotel)
             {
 
-            string appUserId = context.Hotel_Managers.Where(m=>m.HotelId==item.Id).Select(m=>m.AppUserId).FirstOrDefault();
+                string appUserId =unitOfWorkRepository.HotelManagers.FindMangerId(item.Id);
+                    //unitOfWorkRepository.HotelManagers.Find(m=>m.HotelId==item.Id).Select(m=>m.AppUserId).FirstOrDefault();
                 hotelMangersIds.Add(appUserId);
             }
              List<AppUser> hotelManger=new List<AppUser>();
 
             foreach(var item in hotelMangersIds)
             {
-                //AppUser hotelM = unitOfWorkRepository.AppUsers.GetByIDString(item);
-				AppUser hotelM = context.AppUsers.FirstOrDefault(m => m.Id == item);
+                AppUser hotelM = unitOfWorkRepository.AppUsers.GetByIDString(item);
+				//AppUser hotelM = context.AppUsers.FirstOrDefault(m => m.Id == item);
 				hotelManger.Add(hotelM);
             }
 
@@ -85,8 +85,9 @@ namespace Booking.Controllers
             //Hotel hotel = context.Hotel_Managers.Include(m=>m.Hotel).ThenInclude(m=>m.Hotel_Manager.AppUser)
             //    .FirstOrDefault(h => h.Id == id && h.Hotel_Manager.HotelId==id && h.Hotel_Manager.AppUserId==h.Hotel_Manager.AppUser.Id);
 
-            Hotel_Manager hotel = context.Hotel_Managers.Where(h=>h.AppUserId==id ).
-                Include(h => h.Hotel).Include(a => a.AppUser).FirstOrDefault();
+            Hotel_Manager hotel = unitOfWorkRepository.HotelManagers.FindMangerdetailes(id);
+                //context.Hotel_Managers.Where(h=>h.AppUserId==id ).
+                //Include(h => h.Hotel).Include(a => a.AppUser).FirstOrDefault();
             message.Id = hotel.AppUser.Id;
             message.HotelManagerName = hotel.AppUser.UserName;
             message.Gender = hotel.AppUser.gender.ToString();
@@ -105,15 +106,16 @@ namespace Booking.Controllers
 
         public IActionResult AdminHotels()
         {
-            List<Hotel> hotelList = context.Hotels.Where(h=>h.IsDeleted==false).Include(h=>h.Images).ToList();
+           var hotelList = unitOfWorkRepository.Hotels.FindAll(h => h.IsDeleted == false, new[] { "Images" });
+                //context.Hotels.Where(h=>h.IsDeleted==false).Include(h=>h.Images).ToList();
             return View(hotelList);
         }
 
         public IActionResult DeleteHotel(int id) {
-
-            Hotel hotel =context.Hotels.FirstOrDefault(h=>h.Id==id);
+            Hotel hotel = unitOfWorkRepository.Hotels.GetByID(id);
+           // Hotel hotel =context.Hotels.FirstOrDefault(h=>h.Id==id);
             hotel.IsDeleted = true;
-            context.SaveChanges();
+            unitOfWorkRepository.Hotels.Delete(hotel);
             return RedirectToAction( "AdminHotels");
         }
 
@@ -145,9 +147,9 @@ namespace Booking.Controllers
         [HttpGet]
         public async Task<IActionResult> HotelManagerRoleConfirmation(string id)
         {
+            AppUser hotel_Manager=unitOfWorkRepository.AppUsers.GetByIDString(id);
 
-
-            AppUser hotel_Manager = context.AppUsers.FirstOrDefault(h => h.Id == id); 
+           // AppUser hotel_Manager = context.AppUsers.FirstOrDefault(h => h.Id == id); 
 
           await userManager.AddToRoleAsync(hotel_Manager,"HotelManger");
             return RedirectToAction("AdminNotifications");

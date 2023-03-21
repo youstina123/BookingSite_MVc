@@ -1,4 +1,6 @@
 ﻿
+using System.Linq;
+using System.Linq.Expressions;
 using Microsoft.EntityFrameworkCore;
 using RepositoryEF;
 using RepositoryModel.Interfaces;
@@ -41,8 +43,8 @@ namespace RepositoryPatternWithUOW.EF.Repository
 
         public void Delete(T entity)
         {
-            context.Set<T>().Remove(entity);
-            context.SaveChanges();
+           Update(entity);
+          
 
         }
 
@@ -62,5 +64,59 @@ namespace RepositoryPatternWithUOW.EF.Repository
 			//unitOfWork.Complete();
 			//return entity;
 		}
+
+        public T Find(Expression<Func<T, bool>> match)
+        {
+            return context.Set<T>().Find(match);
+        }
+
+        public T Find(Expression<Func<T, bool>> match, string[] includes=null)
+        {
+            IQueryable<T> query = context.Set<T>();
+            if(includes != null)
+            {
+                foreach(var iclude in includes)
+                {
+                    query = query.Include(iclude);
+                }
+            }
+            return query.SingleOrDefault(match);
+        }
+
+       public IEnumerable<T> FindAll(Expression<Func<T, bool>> match, string[] includes = null)
+        
+        {
+            IQueryable<T> query = context.Set<T>();
+            if (includes != null)
+            {
+                foreach (var iclude in includes)
+                {
+                    query = query.Include(iclude);
+                }
+            }
+            return query.Where(match).ToList();
+        }
+
+        //public IEnumerable<T> FindAllinclude(Expression<Func<T, bool>> match, string[] includes = null, string[] includes2 = null)
+        //{
+        //   T entity= Find(match, includes);
+        //    IQueryable<T> query = context.Set<T>();
+        //    if (includes != null)
+        //    {
+        //        foreach (var iclude in includes)
+        //        {
+        //            query = query.Include(iclude);
+
+        //        }
+        //    }
+        //    return query.Where(match).ToList();
+        //}
+
+
+
+       
+
+
+
     }
 }
