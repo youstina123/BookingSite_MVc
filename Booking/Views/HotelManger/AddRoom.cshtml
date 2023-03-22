@@ -9,6 +9,7 @@
     input {
         background-color: transparent;
         font-size: 25px;
+        color: white !important;
     }
 
     label {
@@ -16,40 +17,40 @@
     }
 </style>
 
-<div class="bg-secondary rounded h-100 p-4" id="formDetails">
+<div class=" rounded h-100 p-4" id="formDetails" style="background-color:white">
     <div class="row">
         <div class="col-md-9">
             <h4>Add Room</h4>
-            <form method="post" asp-action="AddRoom" asp-controller="HotelManger" >
+            <form method="post" asp-action="AddRoom" asp-controller="HotelManger" style="background-color:#191C24; padding:50px; border-radius:10px;">
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
                 <div class="form-group d-flex m-3">
-                    <label  class="col-lg-4"asp-for="@Model.Room_Num" control-label">  Number</label>
-                    <input asp-for="@Model.Room_Num" class=" form-control"  />
+                    <label class="col-lg-4" asp-for="@Model.Room_Num" control-label">  Number</label>
+                    <input asp-for="@Model.Room_Num" class=" form-control" />
                     <span asp-validation-for="@Model.Room_Num" class="text-danger"></span>
                 </div>
                 <div class="form-group d-flex m-3">
-                    <label  class="col-lg-4"asp-for="@Model.Description" control-label"> Description</label>
-                    <input asp-for="@Model.Description" class="form-control"  />
+                    <label class="col-lg-4" asp-for="@Model.Description" control-label"> Description</label>
+                    <input asp-for="@Model.Description" class="form-control" />
                     <span asp-validation-for="@Model.Description" class="text-danger"></span>
                 </div>
                 <div class="form-group d-flex m-3">
-                    <label  class="col-lg-4"asp-for="@Model.NumOfAdults" class="col-4 control-label">Number of adults</label>
-                    <input asp-for="@Model.NumOfAdults" class="form-control"  />
+                    <label class="col-lg-4" asp-for="@Model.NumOfAdults" class="col-4 control-label">Number of adults</label>
+                    <input asp-for="@Model.NumOfAdults" class="form-control" />
                     <span asp-validation-for="@Model.NumOfAdults" class="text-danger"></span>
                 </div>
-               
+
                 <div class="form-group d-flex m-3">
-                    <label  class="col-lg-4"asp-for="@Model.Cost_Per_Night" class="col-4 control-label">Cost per night</label>
-                    <input asp-for="@Model.Cost_Per_Night" class="form-control"  />
+                    <label class="col-lg-4" asp-for="@Model.Cost_Per_Night" class="col-4 control-label">Cost per night</label>
+                    <input asp-for="@Model.Cost_Per_Night" class="form-control" />
                     <span asp-validation-for="@Model.Cost_Per_Night" class="text-danger"></span>
                 </div>
 
                 <div class="form-group d-flex m-3">
-               <label   class="col-4 control-label">Type</label>
+                    <label class="col-4 control-label">Type</label>
 
-                    <select class="select" asp-for="@Model.Type_Of_Room" >
-                       
+                    <select class="select" asp-for="@Model.Type_Of_Room">
+
                         <option value="0">Single</option>
                         <option value="1">Double</option>
                         <option value="2">Triple</option>
@@ -61,10 +62,10 @@
 
                     <label class="col-lg-4" asp-for="@Model.image" for="formFileMultiple" class="form-label">Image</label>
                     <input asp-for="@Model.image" class="form-control" type="file" id="formFileMultiple" multiple />
-                        <span asp-validation-for="@Model.image" class="text-danger"></span>
-                    
+                    <span asp-validation-for="@Model.image" class="text-danger"></span>
+
                 </div>
-               
+
                 <div class="form-group">
                     <input type="submit" value="Add" class="btn btn-primary" />
                 </div>

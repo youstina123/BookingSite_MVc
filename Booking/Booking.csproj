@@ -49,9 +49,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="Views\Admin\AdminProfit.cshtml" />
-    <None Include="Views\Admin\AdminHotels.cshtml" />
-    <None Include="Views\Admin\AdminNotifications.cshtml" />
     <None Include="wwwroot\css\.DS_Store" />
     <None Include="wwwroot\css\ajax-loader.gif" />
     <None Include="wwwroot\css\animate.css" />
