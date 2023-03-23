@@ -84,19 +84,19 @@
                 </a>
 
 
-                <div class="navbar-nav align-items-center ms-auto">
+                <div class="col-2 navbar-nav align-items-center ms-auto">
 
 
-                    <div class="nav-item dropdown">
-                        <a href="~/Home/Home" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                    <div class=" nav-item dropdown d-flex" style="align-items:center;padding:12px;">
+                        <a   data-bs-toggle="dropdown" >
                             <img class="rounded-circle me-lg-2" src="/Images/user.jpg" alt="" style="width: 40px; height: 40px;">
-                            <span class="d-none d-lg-inline-flex">Logout </span>
+                            <span class="d-none d-lg-inline-flex"><a href="~/Home/Home" style="text-decoration:none;"> Logout</a> </span>
                         </a>
-                        <div class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0">
+                       @* <div class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0">
                             <a href="#" class="dropdown-item">My Profile</a>
                             <a href="#" class="dropdown-item">Settings</a>
                             <a href="#" class="dropdown-item">Log Out</a>
-                        </div>
+                        </div>*@
                     </div>
                 </div>
             </nav>

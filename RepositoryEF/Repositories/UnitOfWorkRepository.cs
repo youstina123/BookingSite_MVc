@@ -21,6 +21,8 @@ namespace RepositoryEF.Repositories
        public IHotelManagerReprository HotelManagers { get; private set; }
         public IBaseRepository<Customer> Customers { get; private set; }
 
+        public IBaseRepository<BookingPay> BookingPays { get; private set; }
+
 
 
         public UnitOfWorkRepository(ApplicationDbContext context)
@@ -33,6 +35,9 @@ namespace RepositoryEF.Repositories
             Rooms=new BaseRepository<Room>(this.context);
 
             Customers = new BaseRepository<Customer>(this.context);
+
+            BookingPays = new BaseRepository<BookingPay>(this.context);
+
 
 
 

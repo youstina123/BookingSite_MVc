@@ -24,9 +24,9 @@ namespace BookingLibrary.Models
         public Room room { get; set; }
 
         [CreditCard]
-        public string CreditCard_Num { get; set; }
-        public DateTime Checkin { get; set; }
-        public DateTime Checkout { get; set; }
+        public string? CreditCard_Num { get; set; }
+        public DateTime? Checkin { get; set; }
+        public DateTime? Checkout { get; set; }
         public bool IsDeleted { get; set; }
 
     }

@@ -22,10 +22,15 @@ namespace RepositoryModel.Interfaces
         void Delete(T entity);
 
         T Find(Expression<Func<T, bool>> match);
-
+         Task<T> FindAsync(Expression<Func<T, bool>> criteria, string[] includes = null);
         T Find(Expression<Func<T, bool>> match, string[] includes = null);
 
         IEnumerable<T> FindAll(Expression<Func<T, bool>> match, string[] includes = null);
+        IEnumerable<T> FindAll( string[] includes = null);
+
+
+      
+
 
     }
 }

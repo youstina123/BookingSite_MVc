@@ -1,11 +1,14 @@
 ﻿
 using System.Linq;
 using System.Linq.Expressions;
+using System.Reflection.Metadata.Ecma335;
+using System.Text.RegularExpressions;
 using Microsoft.EntityFrameworkCore;
 using RepositoryEF;
 using RepositoryModel.Interfaces;
 using RepositoryPatternWithUOW.Core.Repository;
 using RepositoryPatternWithUOW.EF;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
 namespace RepositoryPatternWithUOW.EF.Repository
 {
@@ -29,12 +32,12 @@ namespace RepositoryPatternWithUOW.EF.Repository
         {
             return context.Set<T>().Find(id);
         }
-		public T GetByIDString(string id)
-		{
-			return context.Set<T>().Find(id);
-		}
+        public T GetByIDString(string id)
+        {
+            return context.Set<T>().Find(id);
+        }
 
-		public T Add(T entity)
+        public T Add(T entity)
         {
             context.Set<T>().Add(entity);
             context.SaveChanges();
@@ -43,8 +46,8 @@ namespace RepositoryPatternWithUOW.EF.Repository
 
         public void Delete(T entity)
         {
-           Update(entity);
-          
+            Update(entity);
+
 
         }
 
@@ -54,28 +57,39 @@ namespace RepositoryPatternWithUOW.EF.Repository
 
         }
 
-      
+
         public void Update(T entity)
         {
-			//context.Set<T>().Attach(entity);
-			//context.Entry(entity).State = EntityState.Modified;
-			context.Update(entity);
+            //context.Set<T>().Attach(entity);
+            //context.Entry(entity).State = EntityState.Modified;
+            context.Update(entity);
             context.SaveChanges();
-			//unitOfWork.Complete();
-			//return entity;
-		}
+            //unitOfWork.Complete();
+            //return entity;
+        }
 
         public T Find(Expression<Func<T, bool>> match)
         {
             return context.Set<T>().Find(match);
         }
 
-        public T Find(Expression<Func<T, bool>> match, string[] includes=null)
+        public async Task<T> FindAsync(Expression<Func<T, bool>> criteria, string[] includes = null)
         {
             IQueryable<T> query = context.Set<T>();
-            if(includes != null)
+
+            if (includes != null)
+                foreach (var incluse in includes)
+                    query = query.Include(incluse);
+
+            return await query.SingleOrDefaultAsync(criteria);
+        }
+
+        public T Find(Expression<Func<T, bool>> match, string[] includes = null)
+        {
+            IQueryable<T> query = context.Set<T>();
+            if (includes != null)
             {
-                foreach(var iclude in includes)
+                foreach (var iclude in includes)
                 {
                     query = query.Include(iclude);
                 }
@@ -83,8 +97,8 @@ namespace RepositoryPatternWithUOW.EF.Repository
             return query.SingleOrDefault(match);
         }
 
-       public IEnumerable<T> FindAll(Expression<Func<T, bool>> match, string[] includes = null)
-        
+        public IEnumerable<T> FindAll(Expression<Func<T, bool>> match, string[] includes = null)
+
         {
             IQueryable<T> query = context.Set<T>();
             if (includes != null)
@@ -97,26 +111,25 @@ namespace RepositoryPatternWithUOW.EF.Repository
             return query.Where(match).ToList();
         }
 
-        //public IEnumerable<T> FindAllinclude(Expression<Func<T, bool>> match, string[] includes = null, string[] includes2 = null)
-        //{
-        //   T entity= Find(match, includes);
-        //    IQueryable<T> query = context.Set<T>();
-        //    if (includes != null)
-        //    {
-        //        foreach (var iclude in includes)
-        //        {
-        //            query = query.Include(iclude);
-
-        //        }
-        //    }
-        //    return query.Where(match).ToList();
-        //}
-
-
-
+        public IEnumerable<T> FindAll(string[] includes = null)
+        {
+            IQueryable<T> query = context.Set<T>();
+            if (includes != null)
+            {
+                foreach (var iclude in includes)
+                {
+                    query = query.Include(iclude);
+                }
+            }
+            return query;
+        }
        
 
 
 
-    }
+
+
+
+
+    } 
 }

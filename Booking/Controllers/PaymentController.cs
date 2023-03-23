@@ -13,11 +13,18 @@ namespace Booking.Controllers
 		{
 			this.unitOfWorkRepository = unitOfWorkRepository;
 		}
-		public IActionResult Index(int Id,double profit)
+		public async Task<IActionResult> Index(int Id,double profit)
 		{
 			BookingPay booking = new BookingPay();
-			Room room = unitOfWorkRepository.Rooms.Find(r => r.Id == Id, new[] { "Hotel" });
+            string nameM = User.Identity.Name.ToString();
+			AppUser custmer= await unitOfWorkRepository.AppUsers.FindAsync(c=>c.UserName== nameM);
+            Room room = unitOfWorkRepository.Rooms.Find(r => r.Id == Id, new[] { "Hotel" });
 			string name=room.Hotel.Name;
+			booking.totalPrice = profit;
+			booking.RoomId=room.Id;
+			booking.HotelId = room.HotelId;
+			booking.CustomerId = custmer.Id;
+			unitOfWorkRepository.BookingPays.Add(booking);
 			return View();
 		}
 

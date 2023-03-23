@@ -158,7 +158,29 @@ namespace Booking.Controllers
 
         public IActionResult AdminProfit()
         {
-            return View();
+            List<AdminProfitViewModel> adminProfit=new List<AdminProfitViewModel>();
+           var  booking = unitOfWorkRepository.BookingPays.FindAll(new[] { "Hotel" });
+            
+            foreach(var item in booking)
+            {
+                
+                AdminProfitViewModel adminP = new AdminProfitViewModel();
+                adminP.HotelName= item.Hotel.Name;
+                adminP.Profit=  item.totalPrice * 0.1;
+
+                adminProfit.Add(adminP);
+               
+               ;
+            }
+            double TotalProfit=0;
+            foreach (var item in adminProfit)
+            {
+                {
+                    TotalProfit += item.Profit;
+                }
+            }
+            ViewData["TotalProfit"]=TotalProfit;
+            return View(adminProfit);
         }
 
 
