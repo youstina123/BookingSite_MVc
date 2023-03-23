@@ -7,10 +7,10 @@
         </button>
 
         <div class="collapse navbar-collapse" id="ftco-nav">
-              <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav ml-auto">
                 <li class="nav-item active"><a href="~/Home/Home" class="nav-link">Home</a></li>
                 <li class="nav-item"><a href="~/Hotel/Index" class="nav-link">Hotels</a></li>
-                @if(User.IsInRole("Admin"))
+                @if (User.IsInRole("Admin"))
                 {
                     <li class="nav-item"><a href="~/Admin/AdminNotifications" class="nav-link">Admin DashBoard</a></li>
                 }
@@ -18,11 +18,12 @@
                 {
                     <li class="nav-item"><a href="~/HotelManger/HotelRooms" class="nav-link">Manger DashBoard</a></li>
                 }
-               <li class="nav-item"><a href="~/Restaurant/Index" class="nav-link">Restaurant</a></li>
-                <li class="nav-item"><a href="~/Home/About" class="nav-link">About</a></li>            
+                @*               <li class="nav-item"><a href="~/Restaurant/Index" class="nav-link">Restaurant</a></li>
+                *@
+                <li class="nav-item"><a href="~/Home/About" class="nav-link">About</a></li>
                 <li class="nav-item"><a href="~/Home/ContactUS" class="nav-link">Contact</a></li>
-                
-                @if(User.Identity.IsAuthenticated)
+
+                @if (User.Identity.IsAuthenticated)
                 {
                     <li class="nav-item"><a href="~/Account/SignOut" class="nav-link">SignOut</a></li>
                 }
@@ -79,10 +80,10 @@
                                         <div class="select-wrap">
                                             <div class="icon"><span class="ion-ios-arrow-down"></span></div>
                                             <select name="City" id="City" class="form-control">
-                                                <option value="hurgada">hurgada</option>
-                                                @*<option value="">Room</option>
-
-                                                <option value="">Both</option>*@
+                                                <option value="Hurgada">Hurgada</option>
+                                                <option value="Cairo">Cairo</option>
+                                                <option value="Alex">Alex</option>
+                                                <option value="Luxor">Luxor</option>
                                             </select>
                                         </div>
                                     </div>

@@ -321,3 +321,20 @@ C:\Users\Amoun\Desktop\New folder (11)\RepositoryEF\obj\Debug\net7.0\refint\Repo
 C:\Users\Amoun\Desktop\New folder (11)\RepositoryEF\obj\Debug\net7.0\RepositoryEF.pdb
 C:\Users\Amoun\Desktop\New folder (11)\RepositoryEF\obj\Debug\net7.0\RepositoryEF.genruntimeconfig.cache
 C:\Users\Amoun\Desktop\New folder (11)\RepositoryEF\obj\Debug\net7.0\ref\RepositoryEF.dll
+C:\Users\Al Lewaa Company\Desktop\New folder\RepositoryEF\bin\Debug\net7.0\RepositoryEF.deps.json
+C:\Users\Al Lewaa Company\Desktop\New folder\RepositoryEF\bin\Debug\net7.0\RepositoryEF.runtimeconfig.json
+C:\Users\Al Lewaa Company\Desktop\New folder\RepositoryEF\bin\Debug\net7.0\RepositoryEF.dll
+C:\Users\Al Lewaa Company\Desktop\New folder\RepositoryEF\bin\Debug\net7.0\RepositoryEF.pdb
+C:\Users\Al Lewaa Company\Desktop\New folder\RepositoryEF\bin\Debug\net7.0\RepositoryModel.dll
+C:\Users\Al Lewaa Company\Desktop\New folder\RepositoryEF\bin\Debug\net7.0\RepositoryModel.pdb
+C:\Users\Al Lewaa Company\Desktop\New folder\RepositoryEF\obj\Debug\net7.0\RepositoryEF.csproj.AssemblyReference.cache
+C:\Users\Al Lewaa Company\Desktop\New folder\RepositoryEF\obj\Debug\net7.0\RepositoryEF.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Al Lewaa Company\Desktop\New folder\RepositoryEF\obj\Debug\net7.0\RepositoryEF.AssemblyInfoInputs.cache
+C:\Users\Al Lewaa Company\Desktop\New folder\RepositoryEF\obj\Debug\net7.0\RepositoryEF.AssemblyInfo.cs
+C:\Users\Al Lewaa Company\Desktop\New folder\RepositoryEF\obj\Debug\net7.0\RepositoryEF.csproj.CoreCompileInputs.cache
+C:\Users\Al Lewaa Company\Desktop\New folder\RepositoryEF\obj\Debug\net7.0\RepositoryEF.csproj.CopyComplete
+C:\Users\Al Lewaa Company\Desktop\New folder\RepositoryEF\obj\Debug\net7.0\RepositoryEF.dll
+C:\Users\Al Lewaa Company\Desktop\New folder\RepositoryEF\obj\Debug\net7.0\refint\RepositoryEF.dll
+C:\Users\Al Lewaa Company\Desktop\New folder\RepositoryEF\obj\Debug\net7.0\RepositoryEF.pdb
+C:\Users\Al Lewaa Company\Desktop\New folder\RepositoryEF\obj\Debug\net7.0\RepositoryEF.genruntimeconfig.cache
+C:\Users\Al Lewaa Company\Desktop\New folder\RepositoryEF\obj\Debug\net7.0\ref\RepositoryEF.dll

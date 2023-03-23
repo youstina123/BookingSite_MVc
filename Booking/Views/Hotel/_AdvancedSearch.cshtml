@@ -1,24 +1,27 @@
 ﻿@model List<Hotel>
 
-@foreach(Hotel hotel in Model){
+@foreach (Hotel hotel in Model)
+{
 	<div class="col-sm col-md-6 col-lg-4 ">
 		<div class="room">
-			<a asp-action="getPhotos" asp-controller="HotelDetails" class="img d-flex justify-content-center align-items-center" style="background-image: url(/images/room-1.jpg);">
+			<a asp-action="getPhotos" asp-route-id="@hotel.Id" asp-controller="HotelDetails" class="img d-flex justify-content-center align-items-center" style="background-image: url(/images/room-1.jpg);">
 				<div class="icon d-flex justify-content-center align-items-center">
 					<span class="icon-search2"></span>
 				</div>
 			</a>
-			<div class="text p-3 text-center">
-				<h3 class="mb-3"><a asp-action="getPhotos" asp-controller="HotelDetails">@hotel.Name</a></h3>
-				<p><span class="price mr-2">$120.00</span> <span class="per">per night</span></p>
+			<div class="text p-3 ">
+				<h3 class="mb-3"><a asp-action="getPhotos" asp-controller="HotelDetails" asp-route-id="@hotel.Id">@hotel.Name</a></h3>
 				<ul class="list">
-					<li><span>Max:</span> 3 Persons</li>
-					<li><span>Size:</span> 45 m2</li>
-					<li><span>View:</span> Sea View</li>
-					<li><span>Bed:</span> 1</li>
+					<li><span>City:</span>@hotel.City</li>
+					<div class=" sect4_stars">
+						@for (int i = 0; i < (int)hotel.Rate; i++)
+						{
+							<i class="fa-solid fa-star" id="star3" style="color: #f5cc02;"></i>
+						}
+					</div>
 				</ul>
 				<hr>
-				<p class="pt-1"><a asp-action="getPhotos" asp-controller="HotelDetails" class="btn-custom">Book Now <span class="icon-long-arrow-right"></span></a></p>
+				<p class="pt-1"><a asp-action="getPhotos" asp-controller="HotelDetails" asp-route-id="@hotel.Id" class="btn-custom">Book Now <span class="icon-long-arrow-right"></span></a></p>
 			</div>
 		</div>
 	</div>

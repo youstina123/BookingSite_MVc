@@ -11,7 +11,7 @@ namespace RepositoryPatternWithUOW.Core.Repository
         IBaseRepository<Hotel> Hotels { get; }
 
         IBaseRepository<Room> Rooms { get; }
-
+        IBaseRepository<Customer> Customers { get; }
         IHotelManagerReprository HotelManagers { get; }
         void Complete();
     }

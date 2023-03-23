@@ -1,0 +1,41 @@
+.card-title, .card-text, .section4_title {
+    color: #4b4741;
+    font-family: Raleway;
+}
+.card-title, .card-text, .section4_title {
+    color: #4b4741;
+    font-family: Raleway;
+}
+@media only screen and (min-width: 768px) and (max-width:1920px){
+    .section4 .carousel-inner {
+      display: flex;
+    }
+    .section4 .carousel-item {
+      margin-right: 0;
+      flex: 0 0 calc(100%/4);
+      display: block;
+    }
+  }
+
+  @media only screen and (min-width: 200px) and (max-width:767px){
+    .section4 .carousel-inner {
+      display: flex;
+    }
+    .section4 .carousel-item {
+      margin-right: 0;
+      flex: 0 0 calc(100%/3);
+      display: block;
+    }
+
+}
+.section4 .card {
+  margin: 0 0.5em;
+  border: none;
+}
+.sect4_stars {
+  font-size: 16px;
+}
+.dots{
+  width: 15px !important;
+  height: 15px !important;
+}

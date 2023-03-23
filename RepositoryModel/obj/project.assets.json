@@ -773,11 +773,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Al Lewaa Company\\Desktop\\BookingWebSite\\RepositoryModel\\RepositoryModel.csproj",
+      "projectUniqueName": "C:\\Users\\Al Lewaa Company\\Desktop\\New folder\\RepositoryModel\\RepositoryModel.csproj",
       "projectName": "RepositoryModel",
-      "projectPath": "C:\\Users\\Al Lewaa Company\\Desktop\\BookingWebSite\\RepositoryModel\\RepositoryModel.csproj",
+      "projectPath": "C:\\Users\\Al Lewaa Company\\Desktop\\New folder\\RepositoryModel\\RepositoryModel.csproj",
       "packagesPath": "C:\\Users\\Al Lewaa Company\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Al Lewaa Company\\Desktop\\BookingWebSite\\RepositoryModel\\obj\\",
+      "outputPath": "C:\\Users\\Al Lewaa Company\\Desktop\\New folder\\RepositoryModel\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Al Lewaa Company\\AppData\\Roaming\\NuGet\\NuGet.Config",

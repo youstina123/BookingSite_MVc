@@ -173,19 +173,19 @@
 
                 <div class="sidebar-box ftco-animate" id="AllCmnt">
                     <h3>Recent Reviews</h3>
-                    @{
+                    @*{
 
-                        foreach (Review item in ViewBag.Reviews)
-                        {
-                            <div class="block-21 mb-4 d-flex">
-                                <a class="blog-img mr-4" id="img" style="background-image: url(https://images.freeimages.com/fic/images/icons/1994/vista_style_business_and_data/256/users.png);"></a>
-                                <div class="text">
-                                    <h5 class="heading" id="appuserName">@item.Customer.AppUser.UserName</h5>
-                                    <h2 class="heading" id=" txt">@item.Text</h2>
-                                </div>
-                            </div>
-                        }
+                    @foreach (Review item in ViewBag.Reviews)
+                    {
+                    <div class="block-21 mb-4 d-flex">
+                    <a class="blog-img mr-4" id="img" style="background-image: url(https://images.freeimages.com/fic/images/icons/1994/vista_style_business_and_data/256/users.png);"></a>
+                    <div class="text">
+                    <h5 class="heading" id="appuserName">@item.Customer.AppUser.UserName</h5>
+                    <h2 class="heading" id=" txt">@item.Text</h2>
+                    </div>
+                    </div>
                     }
+                    }*@
                 </div>
                 @if (User.Identity.IsAuthenticated)
                 {
@@ -217,12 +217,115 @@
                         <a href="#" class="tag-cloud-link">drinks</a>
                     </div>
                 </div>
+                <div class="sidebar-box ftco-animate">
+                    <div class="media block-6 services py-4 d-block text-center">
+                        <div class="d-flex justify-content-center">
+                            <i class="fa-solid fa-utensils" style="font-size: 30PX;color: black;margin-right: 30px;"></i>
+                            <a href="~/Restaurant/Index"><h3 class="heading mb-3" style="font-size: 21px;color: #8d703b;">Restaurant Bar</h3></a>
+                        </div>
+                    </div>
+                </div>
 
                 <a href="~/Payment/Index" class="tag-cloud-link text-bg-secondary align-text-center"> Make Reserve Now </a>
             </div>
         </div>
     </div>
 </section> <!-- .section -->
+<section class="ftco-section">
+    <div class="container">
+        <div class="row d-flex">
+            <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+                <div class="media block-6 services py-4 d-block text-center">
+                    <div class="d-flex justify-content-center">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <span class="flaticon-reception-bell"></span>
+                        </div>
+                    </div>
+                    <div class="media-body p-2 mt-2">
+                        <h3 class="heading mb-3">25/7 Front Desk</h3>
+                        <p>A small river named Duden flows by their place and supplies.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+                <div class="media block-6 services py-4 d-block text-center">
+                    <div class="d-flex justify-content-center">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <span class="flaticon-serving-dish"></span>
+                        </div>
+                    </div>
+                    <div class="media-body p-2 mt-2">
+                        <h3 class="heading mb-3">Restaurant Bar</h3>
+                        <p>A small river named Duden flows by their place and supplies.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 d-flex align-sel Searchf-stretch ftco-animate">
+                <div class="media block-6 services py-4 d-block text-center">
+                    <div class="d-flex justify-content-center">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <span class="flaticon-car"></span>
+                        </div>
+                    </div>
+                    <div class="media-body p-2 mt-2">
+                        <h3 class="heading mb-3">Transfer Services</h3>
+                        <p>A small river named Duden flows by their place and supplies.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+                <div class="media block-6 services py-4 d-block text-center">
+                    <div class="d-flex justify-content-center">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <span class="flaticon-spa"></span>
+                        </div>
+                    </div>
+                    <div class="media-body p-2 mt-2">
+                        <h3 class="heading mb-3">Spa Suites</h3>
+                        <p>A small river named Duden flows by their place and supplies.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="ftco-section testimony-section bg-light">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8 ftco-animate">
+                <div class="row ftco-animate">
+                    <div class="col-md-12">
+                        <div class="carousel-testimony owl-carousel ftco-owl">
+
+                            @foreach (Review item in ViewBag.Reviews)
+                            {
+                                <div class="item">
+                                    <div class="testimony-wrap py-4 pb-5">
+                                        <div class="user-img mb-4" style="background-image: url(/images/person_1.jpg)">
+                                            <span class="quote d-flex align-items-center justify-content-center">
+                                                <i class="icon-quote-left"></i>
+                                            </span>
+                                        </div>
+                                        <div class="text text-center">
+                                            <p class="mb-4">@item.Text</p>
+                                            <p class="name">@item.Customer.AppUser.UserName</p>
+                                            <span class="position">Guests</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            }
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 @section Scripts{
 
     <script src="~/lib/microsoft-signalr/signalr.min.js"></script>
@@ -236,13 +339,15 @@
         hub.on("AddNewComment", function (name, cmnt, id) {
 
             if (id == @Model.Id) {
+
                 $("#AllCmnt").append(` <div class="block-21 mb-4 d-flex">
-                                                    <a class="blog-img mr-4" id="img" style="background-image: url(https://images.freeimages.com/fic/images/icons/1994/vista_style_business_and_data/256/users.png);"></a>
-                                                    <div class="text" >
-                                                                <h5 class="heading" id="appuserName">${name}</h5>
-                                                        <h2 class="heading" id=" txt">${cmnt}</h2>
-                                                    </div>
-                                            </div>`);
+                                                            <a class="blog-img mr-4" id="img" style="background-image: url(https://images.freeimages.com/fic/images/icons/1994/vista_style_business_and_data/256/users.png);"></a>
+                                                            <div class="text" >
+                                                                        <h5 class="heading" id="appuserName">${name}</h5>
+                                                                <h2 class="heading" id=" txt">${cmnt}</h2>
+                                                            </div>
+                                                    </div>`);
+
             }
         });
         function SendComment(Name) {
@@ -255,3 +360,15 @@
         }
     </script>
 }
+
+
+@*<div class="user-img mb-4" style="background-image: url(/images/person_1.jpg)">
+    <span class="quote d-flex align-items-center justify-content-center">
+    <i class="icon-quote-left"></i>
+    </span>
+    </div>
+    <div class="text text-center">
+    <p class="mb-4">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+    <p class="name">Nathan Smith</p>
+    <span class="position">Guests</span>
+    </div>*@

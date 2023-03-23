@@ -1,7 +1,7 @@
 ﻿
 <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
     <div class="container">
-      <a class="navbar-brand" href="index.html">Relaxing</a>
+        <a class="navbar-brand" href="index.html">Relaxing</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="oi oi-menu"></span> Menu
         </button>
@@ -14,15 +14,15 @@
                 {
                     <li class="nav-item"><a href="~/Admin/AdminNotifications" class="nav-link">Admin DashBoard</a></li>
                 }
-                 @if (User.IsInRole("HotelMnger"))
+                @if (User.IsInRole("HotelMnger"))
                 {
                     <li class="nav-item"><a href="~/HotelManger/HotelRooms" class="nav-link">Mnager DashBoard</a></li>
                 }
-                <li class="nav-item"><a href="~/Restaurant/Index" class="nav-link">Restaurant</a></li>
-                <li class="nav-item"><a href="~/Home/About" class="nav-link">About</a></li>            
+                @*  <li class="nav-item"><a href="~/Restaurant/Index" class="nav-link">Restaurant</a></li>*@
+                <li class="nav-item"><a href="~/Home/About" class="nav-link">About</a></li>
                 <li class="nav-item"><a href="~/Home/ContactUS" class="nav-link">Contact</a></li>
-                
-                @if(User.Identity.IsAuthenticated)
+
+                @if (User.Identity.IsAuthenticated)
                 {
                     <li class="nav-item"><a href="~/Account/SignOut" class="nav-link">SignOut</a></li>
                 }

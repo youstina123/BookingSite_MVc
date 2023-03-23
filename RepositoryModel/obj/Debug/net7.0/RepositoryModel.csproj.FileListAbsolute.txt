@@ -226,3 +226,15 @@ C:\Users\Amoun\Desktop\New folder (11)\RepositoryModel\obj\Debug\net7.0\Reposito
 C:\Users\Amoun\Desktop\New folder (11)\RepositoryModel\obj\Debug\net7.0\refint\RepositoryModel.dll
 C:\Users\Amoun\Desktop\New folder (11)\RepositoryModel\obj\Debug\net7.0\RepositoryModel.pdb
 C:\Users\Amoun\Desktop\New folder (11)\RepositoryModel\obj\Debug\net7.0\ref\RepositoryModel.dll
+C:\Users\Al Lewaa Company\Desktop\New folder\RepositoryModel\bin\Debug\net7.0\RepositoryModel.deps.json
+C:\Users\Al Lewaa Company\Desktop\New folder\RepositoryModel\bin\Debug\net7.0\RepositoryModel.dll
+C:\Users\Al Lewaa Company\Desktop\New folder\RepositoryModel\bin\Debug\net7.0\RepositoryModel.pdb
+C:\Users\Al Lewaa Company\Desktop\New folder\RepositoryModel\obj\Debug\net7.0\RepositoryModel.csproj.AssemblyReference.cache
+C:\Users\Al Lewaa Company\Desktop\New folder\RepositoryModel\obj\Debug\net7.0\RepositoryModel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Al Lewaa Company\Desktop\New folder\RepositoryModel\obj\Debug\net7.0\RepositoryModel.AssemblyInfoInputs.cache
+C:\Users\Al Lewaa Company\Desktop\New folder\RepositoryModel\obj\Debug\net7.0\RepositoryModel.AssemblyInfo.cs
+C:\Users\Al Lewaa Company\Desktop\New folder\RepositoryModel\obj\Debug\net7.0\RepositoryModel.csproj.CoreCompileInputs.cache
+C:\Users\Al Lewaa Company\Desktop\New folder\RepositoryModel\obj\Debug\net7.0\RepositoryModel.dll
+C:\Users\Al Lewaa Company\Desktop\New folder\RepositoryModel\obj\Debug\net7.0\refint\RepositoryModel.dll
+C:\Users\Al Lewaa Company\Desktop\New folder\RepositoryModel\obj\Debug\net7.0\RepositoryModel.pdb
+C:\Users\Al Lewaa Company\Desktop\New folder\RepositoryModel\obj\Debug\net7.0\ref\RepositoryModel.dll

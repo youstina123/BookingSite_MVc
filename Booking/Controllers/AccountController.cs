@@ -16,14 +16,14 @@ namespace Booking.Controllers
         private IUnitOfWorkRepository unitOfWorkRepository;
         private UserManager<AppUser> userManager;
         private SignInManager<AppUser> signInManager;
-        
+
         public AccountController(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager,
                                    IUnitOfWorkRepository unitOfWorkRepository)
         {
             this.userManager = userManager;
             this.signInManager = signInManager;
             this.unitOfWorkRepository = unitOfWorkRepository;
-            
+
         }
 
         public IActionResult Index()
@@ -46,7 +46,7 @@ namespace Booking.Controllers
                 userModel.UserName = userRegister.Name;
                 userModel.PasswordHash = userRegister.Password;
                 userModel.Email = userRegister.Email;
-               // userModel.Address = userRegister.Address;
+                // userModel.Address = userRegister.Address;
 
                 if (userRegister.Gender == "Male")
                 {
@@ -61,12 +61,12 @@ namespace Booking.Controllers
 
                 if (result.Succeeded)
                 {
-                    //if (userModel.UserName =="Youstina")
-                    //{
-                    //    userManager.AddToRoleAsync(userModel, "Admin");
-                    //}
-                   
+
                     await signInManager.SignInAsync(userModel, false);
+                    Customer customer = new Customer();
+                    customer.AppUserId = userModel.Id;
+                    unitOfWorkRepository.Customers.Add(customer);
+
                     return View("Login");
                 }
                 else
@@ -99,7 +99,7 @@ namespace Booking.Controllers
 
                     if (result.Succeeded)
                     {
-                        return RedirectToAction("Home","Home");
+                        return RedirectToAction("Home", "Home");
                     }
                     else
                     {
@@ -123,7 +123,7 @@ namespace Booking.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> PartnerRegestration(PartnerRegaestrationViewModel partnerRegester)
         {
-          
+
 
             if (ModelState.IsValid)
             {
@@ -132,7 +132,7 @@ namespace Booking.Controllers
                 Hotel_Manager hotel_Manager = new Hotel_Manager();
 
                 userModel.UserName = partnerRegester.Name;
-                
+
                 if (partnerRegester.Gender == "Male")
                 {
                     userModel.gender = Gender.Male;
@@ -146,7 +146,7 @@ namespace Booking.Controllers
                 userModel.PasswordHash = partnerRegester.Password;
                 userModel.Email = partnerRegester.Email;
                 userModel.PhoneNumber = partnerRegester.PhoneNumber;
-                
+
                 hotel.Name = partnerRegester.HotelName;
                 hotel.Street = partnerRegester.HotelStreet;
                 hotel.Description = partnerRegester.HotelDescription;
@@ -160,7 +160,7 @@ namespace Booking.Controllers
                 hotel.Images = images;
 
 
-               
+
                 switch (partnerRegester.HotelRate)
                 {
                     case "1": { hotel.Rate = Hotel_Rate_Star.Star; break; }
@@ -190,13 +190,13 @@ namespace Booking.Controllers
                     unitOfWorkRepository.Hotels.Add(hotel);
 
                     hotel_Manager.HotelId = hotel.Id;
-                  
+
 
                     hotel.Hotel_ManagerId = userModel.Id;
                     unitOfWorkRepository.HotelManagers.Add(hotel_Manager);
 
-                
-                    
+
+
 
 
                     return RedirectToAction("Home", "Home");
@@ -217,7 +217,7 @@ namespace Booking.Controllers
         public async Task<IActionResult> SignOut()
         {
             await signInManager.SignOutAsync();
-            return RedirectToAction("Home","Home");
+            return RedirectToAction("Home", "Home");
         }
     }
 }

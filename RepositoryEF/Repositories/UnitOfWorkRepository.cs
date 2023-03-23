@@ -19,8 +19,9 @@ namespace RepositoryEF.Repositories
          public IBaseRepository<Room> Rooms { get; private set; }
         public IBaseRepository<Hotel> Hotels { get; private set; }
        public IHotelManagerReprository HotelManagers { get; private set; }
+        public IBaseRepository<Customer> Customers { get; private set; }
 
-       
+
 
         public UnitOfWorkRepository(ApplicationDbContext context)
         {
@@ -31,10 +32,13 @@ namespace RepositoryEF.Repositories
 
             Rooms=new BaseRepository<Room>(this.context);
 
+            Customers = new BaseRepository<Customer>(this.context);
+
+
 
         }
-		
-		public void Complete()
+
+        public void Complete()
         {
              context.SaveChanges();
         }

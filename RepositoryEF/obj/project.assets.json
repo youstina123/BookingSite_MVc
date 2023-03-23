@@ -3659,11 +3659,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Al Lewaa Company\\Desktop\\BookingWebSite\\RepositoryEF\\RepositoryEF.csproj",
+      "projectUniqueName": "C:\\Users\\Al Lewaa Company\\Desktop\\New folder\\RepositoryEF\\RepositoryEF.csproj",
       "projectName": "RepositoryEF",
-      "projectPath": "C:\\Users\\Al Lewaa Company\\Desktop\\BookingWebSite\\RepositoryEF\\RepositoryEF.csproj",
+      "projectPath": "C:\\Users\\Al Lewaa Company\\Desktop\\New folder\\RepositoryEF\\RepositoryEF.csproj",
       "packagesPath": "C:\\Users\\Al Lewaa Company\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Al Lewaa Company\\Desktop\\BookingWebSite\\RepositoryEF\\obj\\",
+      "outputPath": "C:\\Users\\Al Lewaa Company\\Desktop\\New folder\\RepositoryEF\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Al Lewaa Company\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3680,8 +3680,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\Al Lewaa Company\\Desktop\\BookingWebSite\\RepositoryModel\\RepositoryModel.csproj": {
-              "projectPath": "C:\\Users\\Al Lewaa Company\\Desktop\\BookingWebSite\\RepositoryModel\\RepositoryModel.csproj"
+            "C:\\Users\\Al Lewaa Company\\Desktop\\New folder\\RepositoryModel\\RepositoryModel.csproj": {
+              "projectPath": "C:\\Users\\Al Lewaa Company\\Desktop\\New folder\\RepositoryModel\\RepositoryModel.csproj"
             }
           }
         }

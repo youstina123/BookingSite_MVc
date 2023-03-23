@@ -24,7 +24,18 @@ namespace Booking.Controllers
         }
         public IActionResult Home()
         {
-            List<Hotel> hotels =context.Hotels.ToList();
+            string repedcity = "";
+            List<string> cities = new List<string>();
+            List<Hotel> hotels = context.Hotels.OrderBy(h => h.City).ToList();
+            foreach (Hotel hotel in hotels)
+            {
+                if (hotel.City != repedcity)
+                {
+                    cities.Add(hotel.City);
+                }
+                repedcity = hotel.City;
+            }
+            ViewData["Cities"] = cities.ToList();
             return View(hotels);
         }
         public IActionResult About()
