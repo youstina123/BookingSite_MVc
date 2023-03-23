@@ -33,10 +33,7 @@ namespace RepositoryEF.Repositories
             Room room = GetRoomByID(id);
             if (room.IsNormalRoom)
             {
-                List<Room> rooms = context.Rooms
-                                    .Include(r => r.images)
-                                    .Include(r => r.Normal_Room)
-                                    .Where(r => r.Cost_Per_Night >= room.Cost_Per_Night && r.Normal_Room.Type_Of_Room == room.Normal_Room.Type_Of_Room).ToList();
+                List<Room> rooms = context.Rooms.Include(r => r.images).Include(r => r.Normal_Room).Where(r => r.Cost_Per_Night >= room.Cost_Per_Night && r.Normal_Room.Type_Of_Room == room.Normal_Room.Type_Of_Room).ToList();
                 if (rooms.Count > 0)
                 {
                     return rooms;
