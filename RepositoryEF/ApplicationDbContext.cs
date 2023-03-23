@@ -39,7 +39,7 @@ namespace RepositoryEF
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Data Source = EL3ooSS; Initial Catalog = Book-hSystem; Integrated Security = True; trust server certificate = true");
+            optionsBuilder.UseSqlServer("Data Source = DESKTOP-BSM1A45; Initial Catalog = Book-hSystem; Integrated Security = True; trust server certificate = true");
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
