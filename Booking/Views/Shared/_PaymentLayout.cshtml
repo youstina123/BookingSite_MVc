@@ -16,17 +16,26 @@
     <title>Document</title>
 </head>*@
 <body>
-    @RenderBody()
+   
     <div class="container mt-5 px-5">
 
         <div class="mb-4">
 
-            <h2>Confirm order and pay</h2>
-            <span>please make the payment, after that you can enjoy all the features and benefits.</span>
+            <h2 style="color:forestgreen">CONGRATULATIONS!</h2>
+           
+               
 
         </div>
+         <div style="justify-content:center;">
+                <h3 style="text-align:center; letter-spacing:15px;">Your Reservation Is Done</h3>
+            </div>
 
-        <div class="row">
+        <div style="justify-content:center;">
+            <a href="~/Home/Home" style="text-decoration:none; color:darkblue; text-align:center;" ><p>Back Home</p></a>
+        </div>
+    @RenderBody()
+        
+      @*  <div class="row">
 
             <div class="col-md-8">
                 <div class="card p-3">
@@ -95,7 +104,7 @@
 
             </div>
 
-        </div>
+        </div>*@
 
 
     </div>

@@ -1,0 +1,98 @@
+﻿@model PaymentViewModel
+@{
+    Layout = "~/Views/Shared/_PaymentLayout.cshtml";
+
+}
+
+<div class="row">
+
+    <div class="col-md-8">
+        <div class="card p-3">
+            <h6 class="text-uppercase">Payment details</h6>
+            <form asp-action="">
+            <div class="inputbox mt-3"> 
+                <input asp-for="Name" type="text" name="Name" class="form-control" required="required">
+                <span asp-for="Name">Name on card</span>
+            </div>
+            <div class="row">
+
+                <div class="col-md-6">
+                    <div class="inputbox mt-3 mr-2">
+                        <input asp-for="CarNumber" type="text" name="CarNumber" class="form-control" required="required">
+                        <i class="fa fa-credit-card"></i>
+                        <span asp-for="CarNumber">Card Number</span>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="d-flex flex-row">
+                        <div class="inputbox mt-3 mr-2"> 
+                            <input type="text" name="name" class="form-control" required="required">
+                            <span>Expiry</span> </div>
+                        <div class="inputbox mt-3 mr-2"> <input type="text" name="name" class="form-control" required="required"> <span>CVV</span> </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-4 mb-4">
+                <h6 class="text-uppercase">Billing Address</h6>
+                <div class="row mt-3">
+                    <div class="col-md-6">
+                        <div class="inputbox mt-3 mr-2">
+                            <input asp-for="Street" type="text" name="Street" class="form-control" required="required">
+                            <span asp-for="Street">Street Address</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="inputbox mt-3 mr-2"> 
+                            <input asp-for="City" type="text" name="City" class="form-control" required="required">
+                            <span asp-for="City">City</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-2">
+                    <div class="col-md-6">
+                        <div class="inputbox mt-3 mr-2">
+                            <input asp-for="State" type="text" name="State" class="form-control" required="required">
+                            <span asp-for="State">State/Province</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="inputbox mt-3 mr-2">
+                            <input asp-for="ZipCode" type="text" name="ZipCode" class="form-control" required="required">
+                            <span asp-for="ZipCode">Zip code</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            </form>
+        </div>
+
+        <div class="mt-4 mb-4 d-flex justify-content-between">
+            <span>Previous step</span>
+            <a href="~/Payment/Index/@Model.Id?profit=@Model.Price"> <button class="btn btn-success px-3">Pay $@Model.Price</button></a>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card card-blue p-3 text-white mb-3">
+            <span>You have to pay</span>
+            <div class="d-flex flex-row align-items-end mb-3">
+                <h1 class="mb-0 yellow">$@Model.Price</h1> <span>.99</span>
+            </div>
+
+            <span>Enjoy all the features and perk after you complete the payment</span>
+            <a href="#" class="yellow decoration">Know all the features</a>
+            <div class="hightlight">
+                <span>100% Guaranteed support and update for the next 5 years.</span>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+

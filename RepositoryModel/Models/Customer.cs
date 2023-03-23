@@ -12,6 +12,6 @@ namespace BookingLibrary.Models
         public string AppUserId { get; set; }
         public AppUser AppUser { get; set; }
        
-        List<Booking> ?bookings { get; set;}
+        List<BookingPay> ?bookingPays { get; set;}
     }
 }

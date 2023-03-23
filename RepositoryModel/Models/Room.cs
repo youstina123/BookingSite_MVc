@@ -19,7 +19,7 @@ namespace BookingLibrary.Models
         [ForeignKey("Hotel")]
         public int HotelId { get; set; }
         public Hotel ?Hotel { get; set; }
-		List<Booking>? bookings { get; set; }
+		List<BookingPay>? bookings { get; set; }
 		public bool IsNormalRoom { get; set; }
 
 		public bool IsDeleted { get; set; }

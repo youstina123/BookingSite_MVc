@@ -345,7 +345,7 @@ namespace RepositoryEF
         public DbSet<Suit> Suits { get; set; }
 
         public DbSet<Review> Reviews { get; set; }
-        public DbSet<Booking> Bookings { get; set; }
+        public DbSet<BookingPay> BookingPays { get; set; }
         public DbSet<image> image { get; set; }
         public DbSet<BookingCheck> bookingChecks { get; set; }
         public DbSet<BookingDate> bookingDates { get; set; }

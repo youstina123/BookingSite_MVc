@@ -10,6 +10,8 @@ namespace RepositoryPatternWithUOW.Core.Repository
        IBaseRepository<AppUser> AppUsers { get; }
         IBaseRepository<Hotel> Hotels { get; }
 
+        IBaseRepository<Room> Rooms { get; }
+
         IHotelManagerReprository HotelManagers { get; }
         void Complete();
     }

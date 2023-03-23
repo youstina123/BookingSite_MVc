@@ -16,11 +16,9 @@ namespace RepositoryEF.Repositories
 
         public ApplicationDbContext context;
 		public IBaseRepository<AppUser> AppUsers { get; private set; }
-
-		public IBaseRepository<Hotel> Hotels { get; private set; }
+         public IBaseRepository<Room> Rooms { get; private set; }
+        public IBaseRepository<Hotel> Hotels { get; private set; }
        public IHotelManagerReprository HotelManagers { get; private set; }
-
-
 
        
 
@@ -30,6 +28,8 @@ namespace RepositoryEF.Repositories
             Hotels = new BaseRepository<Hotel>(this.context);
             HotelManagers = new HotelManagerRepository(this.context);
 			AppUsers = new BaseRepository<AppUser>(this.context);
+
+            Rooms=new BaseRepository<Room>(this.context);
 
 
         }
