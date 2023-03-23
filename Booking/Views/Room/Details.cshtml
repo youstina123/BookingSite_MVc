@@ -1,7 +1,319 @@
-﻿
+﻿@model Room
 @{
     ViewData["Title"] = "Details";
     Layout = "~/Views/Shared/_RoomDetailsLayout.cshtml";
 }
 
 
+
+<br />
+<br />
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8">
+            <div class="row">
+                <div class="col-md-12 ftco-animate">
+                    @{
+                        if (Model.IsNormalRoom)
+                        {
+                        //<h2 class="mb-4">Type:NormalRoom @ViewBag.NormalRoomm</h2>
+                            <h2 class="mb-4">Type:NormalRoom @Model.Normal_Room.Type_Of_Room.ToString()</h2>
+                        }
+                        else if (!Model.IsNormalRoom)
+                        {
+                        //<h2 class="mb-4">Type: Suit With @ViewBag.Suit Rooms inside</h2>
+                            <h2 class="mb-4">Type: Suit With @Model.Suit.Num_Of_Rooms Rooms</h2>
+                        }
+
+                    }
+
+
+                   
+
+                    <div class="single-slider owl-carousel">
+                        @foreach (var img in Model.images)
+                        {
+                            <div class="item">
+                                <div class="room-img" style="background-image: url(/images/@img.Name.ToString());"></div>
+                            </div>
+                        }
+                    </div>
+
+
+                </div>
+                <div class="col-md-12 room-single mt-4 mb-5 ftco-animate">
+                 
+                    @Model.Description
+                </div>
+                <div class="col-md-12 room-single ftco-animate mb-5 mt-4">
+                    <h3 class="mb-4">Take A Tour</h3>
+                    <div class="block-16">
+
+                        @* <figure>
+                        <img src="/images/room-4.jpg" alt="Image placeholder" class="img-fluid">
+                        <a href="https://vimeo.com/45830194" class="play-button popup-vimeo"><span class="icon-play"></span></a>
+                        </figure>*@
+
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/opHQnkM4OUE"
+                                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
+                            clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                        </iframe>
+
+                    </div>
+                </div>
+
+               
+
+                <div class="sidebar-box ftco-animate" id="AllCmnt">
+                    <h3>Recent Reviews</h3>
+                    @{
+                        foreach (var review in Model.reviews)
+                        {
+                            <div class="block-21 mb-4 d-flex">
+                                <a class="blog-img mr-4" id="img" style="background-image: url(https://images.freeimages.com/fic/images/icons/1994/vista_style_business_and_data/256/users.png);"></a>
+                                <div class="text">
+                                    <h5 class="heading" id="appuserName">@review.Customer.AppUser.UserName</h5>
+                                    <h2 class="heading" id=" txt">@review.Text</h2>
+                                </div>
+                            </div>
+                        }
+                       
+
+                    }
+                </div>
+
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <div class="sidebar-box ftco-animate">
+                        <h3 style="color:brown">Enter Your review here</h3>
+
+                        <span style="color:brown">Comment</span>: <textarea id="cmnt" name="cmnt" class="form form-control">
+                                    </textarea>
+                        <br />
+
+                        <input type="button" value="send" class="btn btn-info" onclick="SendComment('@ViewBag.User')" />
+                    </div>
+                }
+                else
+                {
+                    <div class="sidebar-box ftco-animate">
+                        <h3>please Login to Add Comment</h3>
+                    </div>
+                }
+
+
+
+                <div class="col-md-12 room-single ftco-animate mb-5 mt-5">
+                    <h4 class="mb-4">Available Room</h4>
+                    <div class="row">
+                        @if (ViewBag.RelativeRooms != null)
+                        {
+
+
+                            @foreach (Room room in (List<Room>)ViewBag.RelativeRooms)
+                            {
+                                <div class="col-sm col-md-6 ftco-animate">
+                                    <div class="room">
+                                        <a href="http://localhost:5294/Room/Details/@room.Id" class="img img-2 d-flex justify-content-center align-items-center" style="background-image: url(/images/@room.images[1].Name.ToString());">
+                                            <div class="icon d-flex justify-content-center align-items-center">
+                                                <span class="icon-search2"></span>
+                                            </div>
+                                        </a>
+                                        <div class="text p-3 text-center">
+                                            <h3 class="mb-3"><a href="http://localhost:5294/HotelDetails/getPhotos">More Rooms</a></h3>
+                                            <p><span class="price mr-2">$ @room.Cost_Per_Night</span> <span class="per">per night</span></p>
+                                            <hr>
+                                            <p class="pt-1"><a href="http://localhost:5294/Room/Details/@room.Id" class="btn-custom">View Room Details <span class="icon-long-arrow-right"></span></a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+
+                        }
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div> <!-- .col-md-8 -->
+        <div class="col-lg-4 sidebar ftco-animate">
+            <div class="sidebar-box">
+                <form asp-action="PaymentDetails" asp-controller="Payment">
+                    <label for="Days">Number Of Days</label>
+                    <input name="Days" id="Days" type="number" />
+                    <input type="submit" value="Make Reserve Now" />
+                    <input type="number" value="@Model.Id" hidden name="Id" />
+                </form>
+              @*  @using (Html.BeginForm("PaymentDetails", "Payment", new { id = Model.Id }, FormMethod.Post))
+                {
+                    @Html.TextBoxFor(m => m.InputValue)
+                    @Html.HiddenFor(m => m.Id)
+                    <button type="submit">Submit</button>
+                }*@
+               @* <label for="Days">Number Of Days</label>
+                <input name="Days" id="Days" type="number" />
+                <button class="btn btn-primary" onclick="function(){@Html.Action("PaymentDetails","Payment",document.getElementById('Days').value)}"> Make Reserve Now </button>
+
+              
+                 
+                   
+                    <a href="~/Payment/PaymentDetails/@Model.Id?days=doc" style="color:azure;" class="tag-cloud-link"><button> Make Reserve Now</button> </a>*@
+                    @*<button type="submit">
+                        <p style="background-color:darkgoldenrod;width:80%;height:30%;font-size:x-large;border-radius:10px;text-align:center">
+                            <a href="~/Payment/PaymentDetails/?id=@Model.Id&day" style="color:azure;" class="tag-cloud-link"> Make Reserve Now </a>
+                        </p>
+                    </button>
+                
+               
+
+            </div>
+            <div class="sidebar-box ftco-animate">
+                <div class="categories">
+                    <h3>Properties</h3>
+                    @{
+                        if (Model.IsNormalRoom)
+                        {
+                            <li><a href="#">Type<span>Normal Room</span></a></li>
+                            <li><a href="#">Type Of Room <span>@Model.Normal_Room.Type_Of_Room.ToString()</span></a></li>
+
+                        }
+                        else
+                        {
+                            <li><a href="#">Type<span>Suit</span></a></li>
+                            <li><a href="#">Total Rooms <span>@Model.Suit.Num_Of_Rooms.ToString()</span></a></li>
+                        }
+
+                    }
+                    <li><a href="#">Cost Per Night <span>$ @Model.Cost_Per_Night</span></a></li>
+                    <li><a href="#">Room Number <span>@Model.Room_Num</span></a></li>
+                    <li><a href="#">Adults <span>@Model.NumOfAdults</span></a></li>
+                    <li><a href="#">Hotel Name <span>@Model.Hotel.Name</span></a></li>
+                    <li><a href="#">Hotel Rate <span>@Model.Hotel.Rate</span></a></li>
+                </div>
+            </div>
+
+            <div class="sidebar-box ftco-animate">
+                <h3>Recent Blog</h3>
+                @* <div class="block-21 mb-4 d-flex">
+                <a class="blog-img mr-4" style="background-image: url(/images/image_1.jpg);"></a>
+                <div class="text">
+                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
+                <div class="meta">
+                <div><a href="#"><span class="icon-calendar"></span> July 12, 2018</a></div>
+                <div><a href="#"><span class="icon-person"></span> Admin</a></div>
+                <div><a href="#"><span class="icon-chat"></span> 19</a></div>
+                </div>
+                </div>
+                </div>
+                <div class="block-21 mb-4 d-flex">
+                <a class="blog-img mr-4" style="background-image: url(/images/image_2.jpg);"></a>
+                <div class="text">
+                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
+                <div class="meta">
+                <div><a href="#"><span class="icon-calendar"></span> July 12, 2018</a></div>
+                <div><a href="#"><span class="icon-person"></span> Admin</a></div>
+                <div><a href="#"><span class="icon-chat"></span> 19</a></div>
+                </div>
+                </div>
+                </div>
+                <div class="block-21 mb-4 d-flex">
+                <a class="blog-img mr-4" style="background-image: url(/images/image_3.jpg);"></a>
+                <div class="text">
+                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
+                <div class="meta">
+                <div><a href="#"><span class="icon-calendar"></span> July 12, 2018</a></div>
+                <div><a href="#"><span class="icon-person"></span> Admin</a></div>
+                <div><a href="#"><span class="icon-chat"></span> 19</a></div>
+                </div>
+                </div>
+                </div>*@
+
+                <div class="sidebar-box ftco-animate" id="AllCmnt">
+                    <h3>Recent Reviews</h3>
+                    @{
+                        foreach (var review in Model.reviews)
+                        {
+                            <div class="block-21 mb-4 d-flex">
+                                <a class="blog-img mr-4" id="img" style="background-image: url(https://images.freeimages.com/fic/images/icons/1994/vista_style_business_and_data/256/users.png);"></a>
+                                <div class="text">
+                                    <h5 class="heading" id="appuserName">@review.Customer.AppUser.UserName</h5>
+                                    <h2 class="heading" id=" txt">@review.Text</h2>
+                                </div>
+                            </div>
+                        }
+                        //if (ViewBag.Reviews!=null)
+                        //{
+                        //    foreach (Review item in ViewBag.Reviews)
+                        //    {
+                        //        <div class="block-21 mb-4 d-flex">
+                        //            <a class="blog-img mr-4" id="img" style="background-image: url(https://images.freeimages.com/fic/images/icons/1994/vista_style_business_and_data/256/users.png);"></a>
+                        //            <div class="text">
+                        //                <h5 class="heading" id="appuserName">@item.Customer.AppUser.UserName</h5>
+                        //                <h2 class="heading" id=" txt">@item.Text</h2>
+                        //            </div>
+                        //        </div>
+                        //    }
+            //}
+
+                    }
+                </div>
+
+
+
+
+                <div class="sidebar-box ftco-animate">
+                    <h3>Tag Cloud</h3>
+                    <div class="tagcloud">
+                        <a href="#" class="tag-cloud-link">dish</a>
+                        <a href="#" class="tag-cloud-link">menu</a>
+                        <a href="#" class="tag-cloud-link">food</a>
+                        <a href="#" class="tag-cloud-link">sweet</a>
+                        <a href="#" class="tag-cloud-link">tasty</a>
+                        <a href="#" class="tag-cloud-link">delicious</a>
+                        <a href="#" class="tag-cloud-link">desserts</a>
+                        <a href="#" class="tag-cloud-link">drinks</a>
+                    </div>
+                </div>
+                <input />
+
+                <div class="sidebar-box ftco-animate">
+                    <h3>Paragraph</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus itaque, autem necessitatibus voluptate quod mollitia delectus aut, sunt placeat nam vero culpa sapiente consectetur similique, inventore eos fugit cupiditate numquam!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @section Scripts{
+
+        <script src="~/lib/microsoft-signalr/signalr.min.js"></script>
+        <script>
+            console.log("ccess");
+
+            var hub = new signalR.HubConnectionBuilder().withUrl("/Review").build();
+            hub.start().then(function () {
+                console.log("Connect Success");
+            });
+            hub.on("AddNewComment", function (name, cmnt, id) {
+
+                if (id == @Model.Id) {
+                    $("#AllCmnt").append(` <div class="block-21 mb-4 d-flex">
+                                <a class="blog-img mr-4" id="img" style="background-image: url(https://images.freeimages.com/fic/images/icons/1994/vista_style_business_and_data/256/users.png);"></a>
+                                       <div class="text" >
+                                        <h5 class="heading" id="appuserName">${name}</h5>
+                                        <h2 class="heading" id=" txt">${cmnt}</h2>
+                                       </div>
+                                      </div>`);
+                }
+            });
+            function SendComment(Name) {
+                console.log("Connect");
+                let name = Name;
+                let cmnt = $("#cmnt").val();
+                let id = @Model.Id;
+                console.log(name + ":" + cmnt);
+                hub.invoke("NewRoomComment", name, cmnt, @Model.HotelId, id);
+            }
+        </script>
+    }

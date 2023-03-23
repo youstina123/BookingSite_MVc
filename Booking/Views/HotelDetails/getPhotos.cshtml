@@ -103,7 +103,7 @@
                                         {
                                             if (c < 1)
                                             {
-                                                <a href="rooms.html" class="img img-2 d-flex justify-content-center align-items-center" style="background-image: url(/images/@item.Name);">
+                                                <a asp-action="Details" asp-controller="Room" asp-route-id="@ViewBag.Suit.Room.Id" class="img img-2 d-flex justify-content-center align-items-center" style="background-image: url(/images/@item.Name);">
                                                     <div class="icon d-flex justify-content-center align-items-center">
                                                         <span class="icon-search2"></span>
                                                     </div>
@@ -112,10 +112,10 @@
                                             }
                                         }
                                         <div class="text p-3 text-center">
-                                            <h3 class="mb-3"> <a href="rooms.html">suit Room</a></h3>
+                                            <h3 class="mb-3"> <a href="#">suit Room</a></h3>
                                             <p><span class="price mr-2">@ViewBag.Suit.Room.Cost_Per_Night</span> <span class="per">per night</span></p>
                                             <hr>
-                                            <p class="pt-1"><a href="room-single.html" class="btn-custom">View Room Details <span class="icon-long-arrow-right"></span></a></p>
+                                            <p class="pt-1"><a asp-action="Details" asp-controller="Room" asp-route-id="@ViewBag.Suit.Room.Id" class="btn-custom">View Room Details <span class="icon-long-arrow-right"></span></a></p>
                                         </div>
                                     </div>
                                 </div>
@@ -131,7 +131,7 @@
 
                                             if (c < 1)
                                             {
-                                                <a href="rooms.html" class="img img-2 d-flex justify-content-center align-items-center" style="background-image: url(/images/@itemimages.Name);">
+                                                <a asp-action="Details" asp-controller="Room" asp-route-id="@item.RoomId" class="img img-2 d-flex justify-content-center align-items-center" style="background-image: url(/images/@itemimages.Name);">
                                                     <div class="icon d-flex justify-content-center align-items-center">
                                                         <span class="icon-search2"></span>
                                                     </div>
@@ -143,7 +143,7 @@
                                             <h3 class="mb-3"> <a href="rooms.html">@item.Type_Of_Room.ToString()</a></h3>
                                             <p><span class="price mr-2">@item.Room.Cost_Per_Night</span> <span class="per">per night</span></p>
                                             <hr>
-                                            <p class="pt-1"><a href="room-single.html" class="btn-custom">View Room Details <span class="icon-long-arrow-right"></span></a></p>
+                                            <p class="pt-1"><a asp-action="Details" asp-controller="Room" asp-route-id="@item.RoomId" class="btn-custom">View Room Details <span class="icon-long-arrow-right"></span></a></p>
                                         </div>
                                     </div>
                                 </div>
