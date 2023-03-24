@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Amoun\\Desktop\\New folder (16)\\Booking\\Booking.csproj": {}
+    "C:\\Users\\M.Essam\\Desktop\\LAST ONE\\Booking\\Booking.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Amoun\\Desktop\\New folder (16)\\Booking\\Booking.csproj": {
+    "C:\\Users\\M.Essam\\Desktop\\LAST ONE\\Booking\\Booking.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Amoun\\Desktop\\New folder (16)\\Booking\\Booking.csproj",
+        "projectUniqueName": "C:\\Users\\M.Essam\\Desktop\\LAST ONE\\Booking\\Booking.csproj",
         "projectName": "Booking",
-        "projectPath": "C:\\Users\\Amoun\\Desktop\\New folder (16)\\Booking\\Booking.csproj",
-        "packagesPath": "C:\\Users\\Amoun\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Amoun\\Desktop\\New folder (16)\\Booking\\obj\\",
+        "projectPath": "C:\\Users\\M.Essam\\Desktop\\LAST ONE\\Booking\\Booking.csproj",
+        "packagesPath": "C:\\Users\\M.Essam\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\M.Essam\\Desktop\\LAST ONE\\Booking\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Amoun\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\M.Essam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +32,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Amoun\\Desktop\\New folder (16)\\RepositoryEF\\RepositoryEF.csproj": {
-                "projectPath": "C:\\Users\\Amoun\\Desktop\\New folder (16)\\RepositoryEF\\RepositoryEF.csproj"
+              "C:\\Users\\M.Essam\\Desktop\\LAST ONE\\RepositoryEF\\RepositoryEF.csproj": {
+                "projectPath": "C:\\Users\\M.Essam\\Desktop\\LAST ONE\\RepositoryEF\\RepositoryEF.csproj"
               }
             }
           }
@@ -86,21 +90,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Amoun\\Desktop\\New folder (16)\\RepositoryEF\\RepositoryEF.csproj": {
+    "C:\\Users\\M.Essam\\Desktop\\LAST ONE\\RepositoryEF\\RepositoryEF.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Amoun\\Desktop\\New folder (16)\\RepositoryEF\\RepositoryEF.csproj",
+        "projectUniqueName": "C:\\Users\\M.Essam\\Desktop\\LAST ONE\\RepositoryEF\\RepositoryEF.csproj",
         "projectName": "RepositoryEF",
-        "projectPath": "C:\\Users\\Amoun\\Desktop\\New folder (16)\\RepositoryEF\\RepositoryEF.csproj",
-        "packagesPath": "C:\\Users\\Amoun\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Amoun\\Desktop\\New folder (16)\\RepositoryEF\\obj\\",
+        "projectPath": "C:\\Users\\M.Essam\\Desktop\\LAST ONE\\RepositoryEF\\RepositoryEF.csproj",
+        "packagesPath": "C:\\Users\\M.Essam\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\M.Essam\\Desktop\\LAST ONE\\RepositoryEF\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Amoun\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\M.Essam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -114,8 +122,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Amoun\\Desktop\\New folder (16)\\RepositoryModel\\RepositoryModel.csproj": {
-                "projectPath": "C:\\Users\\Amoun\\Desktop\\New folder (16)\\RepositoryModel\\RepositoryModel.csproj"
+              "C:\\Users\\M.Essam\\Desktop\\LAST ONE\\RepositoryModel\\RepositoryModel.csproj": {
+                "projectPath": "C:\\Users\\M.Essam\\Desktop\\LAST ONE\\RepositoryModel\\RepositoryModel.csproj"
               }
             }
           }
@@ -161,21 +169,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Amoun\\Desktop\\New folder (16)\\RepositoryModel\\RepositoryModel.csproj": {
+    "C:\\Users\\M.Essam\\Desktop\\LAST ONE\\RepositoryModel\\RepositoryModel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Amoun\\Desktop\\New folder (16)\\RepositoryModel\\RepositoryModel.csproj",
+        "projectUniqueName": "C:\\Users\\M.Essam\\Desktop\\LAST ONE\\RepositoryModel\\RepositoryModel.csproj",
         "projectName": "RepositoryModel",
-        "projectPath": "C:\\Users\\Amoun\\Desktop\\New folder (16)\\RepositoryModel\\RepositoryModel.csproj",
-        "packagesPath": "C:\\Users\\Amoun\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Amoun\\Desktop\\New folder (16)\\RepositoryModel\\obj\\",
+        "projectPath": "C:\\Users\\M.Essam\\Desktop\\LAST ONE\\RepositoryModel\\RepositoryModel.csproj",
+        "packagesPath": "C:\\Users\\M.Essam\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\M.Essam\\Desktop\\LAST ONE\\RepositoryModel\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Amoun\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\M.Essam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -222,7 +234,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

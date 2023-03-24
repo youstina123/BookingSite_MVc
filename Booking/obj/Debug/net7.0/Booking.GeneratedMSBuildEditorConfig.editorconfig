@@ -9,193 +9,193 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Booking
 build_property.RootNamespace = Booking
-build_property.ProjectDir = C:\Users\Amoun\Desktop\New folder (16)\Booking\
+build_property.ProjectDir = C:\Users\M.Essam\Desktop\LAST ONE\Booking\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Amoun\Desktop\New folder (16)\Booking
+build_property.MSBuildProjectDirectory = C:\Users\M.Essam\Desktop\LAST ONE\Booking
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Amoun/Desktop/New folder (16)/Booking/Views/Account/Login.cshtml]
+[C:/Users/M.Essam/Desktop/LAST ONE/Booking/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Amoun/Desktop/New folder (16)/Booking/Views/Account/PartnerRegestration.cshtml]
+[C:/Users/M.Essam/Desktop/LAST ONE/Booking/Views/Account/PartnerRegestration.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxQYXJ0bmVyUmVnZXN0cmF0aW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Amoun/Desktop/New folder (16)/Booking/Views/Account/Regestration.cshtml]
+[C:/Users/M.Essam/Desktop/LAST ONE/Booking/Views/Account/Regestration.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdlc3RyYXRpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Amoun/Desktop/New folder (16)/Booking/Views/Account/_LoginForm.cshtml]
+[C:/Users/M.Essam/Desktop/LAST ONE/Booking/Views/Account/_LoginForm.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxfTG9naW5Gb3JtLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Amoun/Desktop/New folder (16)/Booking/Views/Account/_RegestrationForm.cshtml]
+[C:/Users/M.Essam/Desktop/LAST ONE/Booking/Views/Account/_RegestrationForm.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxfUmVnZXN0cmF0aW9uRm9ybS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Amoun/Desktop/New folder (16)/Booking/Views/Admin/AdminHotels.cshtml]
+[C:/Users/M.Essam/Desktop/LAST ONE/Booking/Views/Admin/AdminHotels.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRtaW5Ib3RlbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Amoun/Desktop/New folder (16)/Booking/Views/Admin/AdminNotifications.cshtml]
+[C:/Users/M.Essam/Desktop/LAST ONE/Booking/Views/Admin/AdminNotifications.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRtaW5Ob3RpZmljYXRpb25zLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Amoun/Desktop/New folder (16)/Booking/Views/Admin/AdminProfit.cshtml]
+[C:/Users/M.Essam/Desktop/LAST ONE/Booking/Views/Admin/AdminProfit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRtaW5Qcm9maXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Amoun/Desktop/New folder (16)/Booking/Views/Admin/UpdateHotel.cshtml]
+[C:/Users/M.Essam/Desktop/LAST ONE/Booking/Views/Admin/UpdateHotel.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVXBkYXRlSG90ZWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Amoun/Desktop/New folder (16)/Booking/Views/Admin/_HotelManagerMessageDetais.cshtml]
+[C:/Users/M.Essam/Desktop/LAST ONE/Booking/Views/Admin/_HotelManagerMessageDetais.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cX0hvdGVsTWFuYWdlck1lc3NhZ2VEZXRhaXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Amoun/Desktop/New folder (16)/Booking/Views/Home/About.cshtml]
+[C:/Users/M.Essam/Desktop/LAST ONE/Booking/Views/Home/About.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Amoun/Desktop/New folder (16)/Booking/Views/Home/ContactUS.cshtml]
+[C:/Users/M.Essam/Desktop/LAST ONE/Booking/Views/Home/ContactUS.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YWN0VVMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Amoun/Desktop/New folder (16)/Booking/Views/Home/Home.cshtml]
+[C:/Users/M.Essam/Desktop/LAST ONE/Booking/Views/Home/Home.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIb21lLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Amoun/Desktop/New folder (16)/Booking/Views/Home/Index.cshtml]
+[C:/Users/M.Essam/Desktop/LAST ONE/Booking/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Amoun/Desktop/New folder (16)/Booking/Views/Home/Privacy.cshtml]
+[C:/Users/M.Essam/Desktop/LAST ONE/Booking/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Amoun/Desktop/New folder (16)/Booking/Views/HotelDetails/getPhotos.cshtml]
+[C:/Users/M.Essam/Desktop/LAST ONE/Booking/Views/HotelDetails/getPhotos.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG90ZWxEZXRhaWxzXGdldFBob3Rvcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Amoun/Desktop/New folder (16)/Booking/Views/HotelManger/AddRoom.cshtml]
+[C:/Users/M.Essam/Desktop/LAST ONE/Booking/Views/HotelManger/AddRoom.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG90ZWxNYW5nZXJcQWRkUm9vbS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Amoun/Desktop/New folder (16)/Booking/Views/HotelManger/AddSuit.cshtml]
+[C:/Users/M.Essam/Desktop/LAST ONE/Booking/Views/HotelManger/AddSuit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG90ZWxNYW5nZXJcQWRkU3VpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Amoun/Desktop/New folder (16)/Booking/Views/HotelManger/HotelRooms.cshtml]
+[C:/Users/M.Essam/Desktop/LAST ONE/Booking/Views/HotelManger/HotelRooms.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG90ZWxNYW5nZXJcSG90ZWxSb29tcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Amoun/Desktop/New folder (16)/Booking/Views/HotelManger/HotelSuits.cshtml]
+[C:/Users/M.Essam/Desktop/LAST ONE/Booking/Views/HotelManger/HotelSuits.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG90ZWxNYW5nZXJcSG90ZWxTdWl0cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Amoun/Desktop/New folder (16)/Booking/Views/HotelManger/UpdateRoom.cshtml]
+[C:/Users/M.Essam/Desktop/LAST ONE/Booking/Views/HotelManger/UpdateRoom.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG90ZWxNYW5nZXJcVXBkYXRlUm9vbS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Amoun/Desktop/New folder (16)/Booking/Views/HotelManger/Updatesuits.cshtml]
+[C:/Users/M.Essam/Desktop/LAST ONE/Booking/Views/HotelManger/Updatesuits.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG90ZWxNYW5nZXJcVXBkYXRlc3VpdHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Amoun/Desktop/New folder (16)/Booking/Views/Hotel/Index.cshtml]
+[C:/Users/M.Essam/Desktop/LAST ONE/Booking/Views/Hotel/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG90ZWxcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Amoun/Desktop/New folder (16)/Booking/Views/Hotel/Search.cshtml]
+[C:/Users/M.Essam/Desktop/LAST ONE/Booking/Views/Hotel/Search.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG90ZWxcU2VhcmNoLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Amoun/Desktop/New folder (16)/Booking/Views/Hotel/_AdvancedSearch.cshtml]
+[C:/Users/M.Essam/Desktop/LAST ONE/Booking/Views/Hotel/_AdvancedSearch.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG90ZWxcX0FkdmFuY2VkU2VhcmNoLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Amoun/Desktop/New folder (16)/Booking/Views/Payment/Index.cshtml]
+[C:/Users/M.Essam/Desktop/LAST ONE/Booking/Views/Payment/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5bWVudFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Amoun/Desktop/New folder (16)/Booking/Views/Payment/PaymentDetails.cshtml]
+[C:/Users/M.Essam/Desktop/LAST ONE/Booking/Views/Payment/PaymentDetails.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5bWVudFxQYXltZW50RGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Amoun/Desktop/New folder (16)/Booking/Views/Restaurant/Index.cshtml]
+[C:/Users/M.Essam/Desktop/LAST ONE/Booking/Views/Restaurant/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzdGF1cmFudFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Amoun/Desktop/New folder (16)/Booking/Views/Role/New.cshtml]
+[C:/Users/M.Essam/Desktop/LAST ONE/Booking/Views/Role/New.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxOZXcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Amoun/Desktop/New folder (16)/Booking/Views/Room/Details.cshtml]
+[C:/Users/M.Essam/Desktop/LAST ONE/Booking/Views/Room/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9vbVxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Amoun/Desktop/New folder (16)/Booking/Views/Shared/Error.cshtml]
+[C:/Users/M.Essam/Desktop/LAST ONE/Booking/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Amoun/Desktop/New folder (16)/Booking/Views/Shared/_AdminLayout.cshtml]
+[C:/Users/M.Essam/Desktop/LAST ONE/Booking/Views/Shared/_AdminLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BZG1pbkxheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Amoun/Desktop/New folder (16)/Booking/Views/Shared/_BookingLayout.cshtml]
+[C:/Users/M.Essam/Desktop/LAST ONE/Booking/Views/Shared/_BookingLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Cb29raW5nTGF5b3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Amoun/Desktop/New folder (16)/Booking/Views/Shared/_ContentLayout.cshtml]
+[C:/Users/M.Essam/Desktop/LAST ONE/Booking/Views/Shared/_ContentLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Db250ZW50TGF5b3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Amoun/Desktop/New folder (16)/Booking/Views/Shared/_Footer.cshtml]
+[C:/Users/M.Essam/Desktop/LAST ONE/Booking/Views/Shared/_Footer.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Gb290ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Amoun/Desktop/New folder (16)/Booking/Views/Shared/_HotelLayout.cshtml]
+[C:/Users/M.Essam/Desktop/LAST ONE/Booking/Views/Shared/_HotelLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Ib3RlbExheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Amoun/Desktop/New folder (16)/Booking/Views/Shared/_HotelManagerDashboardLayout.cshtml]
+[C:/Users/M.Essam/Desktop/LAST ONE/Booking/Views/Shared/_HotelManagerDashboardLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Ib3RlbE1hbmFnZXJEYXNoYm9hcmRMYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Amoun/Desktop/New folder (16)/Booking/Views/Shared/_NavContent.cshtml]
+[C:/Users/M.Essam/Desktop/LAST ONE/Booking/Views/Shared/_NavContent.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9OYXZDb250ZW50LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Amoun/Desktop/New folder (16)/Booking/Views/Shared/_NavHome.cshtml]
+[C:/Users/M.Essam/Desktop/LAST ONE/Booking/Views/Shared/_NavHome.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9OYXZIb21lLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Amoun/Desktop/New folder (16)/Booking/Views/Shared/_PaymentLayout.cshtml]
+[C:/Users/M.Essam/Desktop/LAST ONE/Booking/Views/Shared/_PaymentLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9QYXltZW50TGF5b3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Amoun/Desktop/New folder (16)/Booking/Views/Shared/_RestaurantLayout.cshtml]
+[C:/Users/M.Essam/Desktop/LAST ONE/Booking/Views/Shared/_RestaurantLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9SZXN0YXVyYW50TGF5b3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Amoun/Desktop/New folder (16)/Booking/Views/Shared/_RoomDetailsLayout.cshtml]
+[C:/Users/M.Essam/Desktop/LAST ONE/Booking/Views/Shared/_RoomDetailsLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Sb29tRGV0YWlsc0xheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Amoun/Desktop/New folder (16)/Booking/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/M.Essam/Desktop/LAST ONE/Booking/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Amoun/Desktop/New folder (16)/Booking/Views/_ViewImports.cshtml]
+[C:/Users/M.Essam/Desktop/LAST ONE/Booking/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Amoun/Desktop/New folder (16)/Booking/Views/_ViewStart.cshtml]
+[C:/Users/M.Essam/Desktop/LAST ONE/Booking/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Amoun/Desktop/New folder (16)/Booking/Views/Shared/_Layout.cshtml]
+[C:/Users/M.Essam/Desktop/LAST ONE/Booking/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-unpkwsaam7
