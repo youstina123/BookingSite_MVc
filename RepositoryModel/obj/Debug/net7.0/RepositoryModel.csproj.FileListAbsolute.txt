@@ -262,3 +262,15 @@ C:\Users\Amoun\Desktop\New folder (15)\RepositoryModel\obj\Debug\net7.0\Reposito
 C:\Users\Amoun\Desktop\New folder (15)\RepositoryModel\obj\Debug\net7.0\refint\RepositoryModel.dll
 C:\Users\Amoun\Desktop\New folder (15)\RepositoryModel\obj\Debug\net7.0\RepositoryModel.pdb
 C:\Users\Amoun\Desktop\New folder (15)\RepositoryModel\obj\Debug\net7.0\ref\RepositoryModel.dll
+C:\Users\TEMP.DESKTOP-TOJ495J.000.001\Desktop\Pullmvcproject\RepositoryModel\bin\Debug\net7.0\RepositoryModel.deps.json
+C:\Users\TEMP.DESKTOP-TOJ495J.000.001\Desktop\Pullmvcproject\RepositoryModel\bin\Debug\net7.0\RepositoryModel.dll
+C:\Users\TEMP.DESKTOP-TOJ495J.000.001\Desktop\Pullmvcproject\RepositoryModel\bin\Debug\net7.0\RepositoryModel.pdb
+C:\Users\TEMP.DESKTOP-TOJ495J.000.001\Desktop\Pullmvcproject\RepositoryModel\obj\Debug\net7.0\RepositoryModel.csproj.AssemblyReference.cache
+C:\Users\TEMP.DESKTOP-TOJ495J.000.001\Desktop\Pullmvcproject\RepositoryModel\obj\Debug\net7.0\RepositoryModel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\TEMP.DESKTOP-TOJ495J.000.001\Desktop\Pullmvcproject\RepositoryModel\obj\Debug\net7.0\RepositoryModel.AssemblyInfoInputs.cache
+C:\Users\TEMP.DESKTOP-TOJ495J.000.001\Desktop\Pullmvcproject\RepositoryModel\obj\Debug\net7.0\RepositoryModel.AssemblyInfo.cs
+C:\Users\TEMP.DESKTOP-TOJ495J.000.001\Desktop\Pullmvcproject\RepositoryModel\obj\Debug\net7.0\RepositoryModel.csproj.CoreCompileInputs.cache
+C:\Users\TEMP.DESKTOP-TOJ495J.000.001\Desktop\Pullmvcproject\RepositoryModel\obj\Debug\net7.0\RepositoryModel.dll
+C:\Users\TEMP.DESKTOP-TOJ495J.000.001\Desktop\Pullmvcproject\RepositoryModel\obj\Debug\net7.0\refint\RepositoryModel.dll
+C:\Users\TEMP.DESKTOP-TOJ495J.000.001\Desktop\Pullmvcproject\RepositoryModel\obj\Debug\net7.0\RepositoryModel.pdb
+C:\Users\TEMP.DESKTOP-TOJ495J.000.001\Desktop\Pullmvcproject\RepositoryModel\obj\Debug\net7.0\ref\RepositoryModel.dll

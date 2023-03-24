@@ -18,10 +18,12 @@ namespace RepositoryEF.Repositories
        public IBaseRepository<Room> Room { get; private set; }
         public IBaseRepository<AppUser> AppUsers { get; private set; }
          public IRoomReopository Rooms { get; private set; }
-        public IBaseRepository<Hotel> Hotels { get; private set; }
-       public IHotelManagerReprository HotelManagers { get; private set; }
+        //  public IBaseRepository<Hotel> Hotels { get; private set; }
+        public IBookingDatesReprository BookingDates { get; private set; }
+        public IBookingChecksReprository BookingChecks { get; private set; }
+        public IHotelManagerReprository HotelManagers { get; private set; }
         public IBaseRepository<Customer> Customers { get; private set; }
-        public IHotelRepository hotels { get; private set; }
+        public IHotelRepository Hotels { get; private set; }
 
         public IBaseRepository<BookingPay> BookingPays { get; private set; }
 
@@ -31,17 +33,20 @@ namespace RepositoryEF.Repositories
         public UnitOfWorkRepository(ApplicationDbContext context)
         {
             this.context = context;
-            Hotels = new BaseRepository<Hotel>(this.context);
+           // Hotels = new BaseRepository<Hotel>(this.context);
             HotelManagers = new HotelManagerRepository(this.context);
 			AppUsers = new BaseRepository<AppUser>(this.context);
+            BookingDates = new BookingDatesReprository(this.context);
 
-            Rooms=new RoomRepository (this.context);
+            BookingChecks = new BookingChecksReprository(this.context);
+
+            Rooms =new RoomRepository (this.context);
 
             Customers = new BaseRepository<Customer>(this.context);
 
             BookingPays = new BaseRepository<BookingPay>(this.context);
             Room= new BaseRepository<Room>(this.context);
-            hotels = new HotelRepository(this.context);
+            Hotels = new HotelRepository(this.context);
 
 
         }

@@ -25,8 +25,8 @@ namespace Booking.Controllers
         public async Task<IActionResult>  getPhotos(int id)
         {
             Hotel hotel = await unitOfWorkRepository.Hotels.FindAsync(e => e.Id == id);
-            List<string> photos = unitOfWorkRepository.hotels.getphoto(id);
-            List<Review> reviews = unitOfWorkRepository.hotels.getReviews(id);
+            List<string> photos = unitOfWorkRepository.Hotels.getphoto(id);
+            List<Review> reviews = unitOfWorkRepository.Hotels.getReviews(id);
 
             //List<Normal_Room> Rooms = new List<Normal_Room>();
             //for (int i = 0; i < 4; i++)
@@ -37,7 +37,7 @@ namespace Booking.Controllers
             //        Rooms.Add(room);
             //    }
             //}
-            Suit suit = unitOfWorkRepository.hotels.getsuit(id);
+            Suit suit = unitOfWorkRepository.Hotels.getsuit(id);
 
             string userName = "";
             if (User.Identity.IsAuthenticated)
@@ -48,7 +48,7 @@ namespace Booking.Controllers
 
             ViewData["Reviews"] = reviews;
             ViewData["photo"] = photos;
-            ViewData["normal"] = unitOfWorkRepository.hotels.getrooms(id);
+            ViewData["normal"] = unitOfWorkRepository.Hotels.getrooms(id);
             ViewData["Suit"] = suit;
 
 

@@ -171,7 +171,9 @@
                     </div>
                 </div>
 
-                <div class="sidebar-box ftco-animate" id="AllCmnt">
+                <div class="sidebar-box ftco-animate " id="AllCmnt" style="overflow: auto;
+    height: 225px;
+    width: 463px;">
                     <h3>Recent Reviews</h3>
                     @*{
 
@@ -187,6 +189,7 @@
                     }
                     }*@
                 </div>
+
                 @if (User.Identity.IsAuthenticated)
                 {
                     <div class="sidebar-box ftco-animate">
@@ -341,12 +344,12 @@
             if (id == @Model.Id) {
 
                 $("#AllCmnt").append(` <div class="block-21 mb-4 d-flex">
-                                                            <a class="blog-img mr-4" id="img" style="background-image: url(https://images.freeimages.com/fic/images/icons/1994/vista_style_business_and_data/256/users.png);"></a>
-                                                            <div class="text" >
-                                                                        <h5 class="heading" id="appuserName">${name}</h5>
-                                                                <h2 class="heading" id=" txt">${cmnt}</h2>
-                                                            </div>
-                                                    </div>`);
+                                                                    <a class="blog-img mr-4" id="img" style="background-image: url(https://images.freeimages.com/fic/images/icons/1994/vista_style_business_and_data/256/users.png);"></a>
+                                                                    <div class="text" >
+                                                                                <h5 class="heading" id="appuserName">${name}</h5>
+                                                                        <h2 class="heading" id=" txt">${cmnt}</h2>
+                                                                    </div>
+                                                            </div>`);
 
             }
         });

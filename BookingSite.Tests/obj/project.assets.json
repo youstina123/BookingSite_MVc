@@ -4395,19 +4395,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Amoun\\.nuget\\packages\\": {}
+    "C:\\Users\\TEMP.DESKTOP-TOJ495J.000.001\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Amoun\\Desktop\\New folder (15)\\BookingSite.Tests\\BookingSite.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\TEMP.DESKTOP-TOJ495J.000.001\\Desktop\\Pullmvcproject\\BookingSite.Tests\\BookingSite.Tests.csproj",
       "projectName": "BookingSite.Tests",
-      "projectPath": "C:\\Users\\Amoun\\Desktop\\New folder (15)\\BookingSite.Tests\\BookingSite.Tests.csproj",
-      "packagesPath": "C:\\Users\\Amoun\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Amoun\\Desktop\\New folder (15)\\BookingSite.Tests\\obj\\",
+      "projectPath": "C:\\Users\\TEMP.DESKTOP-TOJ495J.000.001\\Desktop\\Pullmvcproject\\BookingSite.Tests\\BookingSite.Tests.csproj",
+      "packagesPath": "C:\\Users\\TEMP.DESKTOP-TOJ495J.000.001\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\TEMP.DESKTOP-TOJ495J.000.001\\Desktop\\Pullmvcproject\\BookingSite.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Amoun\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\TEMP.DESKTOP-TOJ495J.000.001\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4421,11 +4421,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\Amoun\\Desktop\\New folder (15)\\RepositoryEF\\RepositoryEF.csproj": {
-              "projectPath": "C:\\Users\\Amoun\\Desktop\\New folder (15)\\RepositoryEF\\RepositoryEF.csproj"
+            "C:\\Users\\TEMP.DESKTOP-TOJ495J.000.001\\Desktop\\Pullmvcproject\\RepositoryEF\\RepositoryEF.csproj": {
+              "projectPath": "C:\\Users\\TEMP.DESKTOP-TOJ495J.000.001\\Desktop\\Pullmvcproject\\RepositoryEF\\RepositoryEF.csproj"
             },
-            "C:\\Users\\Amoun\\Desktop\\New folder (15)\\RepositoryModel\\RepositoryModel.csproj": {
-              "projectPath": "C:\\Users\\Amoun\\Desktop\\New folder (15)\\RepositoryModel\\RepositoryModel.csproj"
+            "C:\\Users\\TEMP.DESKTOP-TOJ495J.000.001\\Desktop\\Pullmvcproject\\RepositoryModel\\RepositoryModel.csproj": {
+              "projectPath": "C:\\Users\\TEMP.DESKTOP-TOJ495J.000.001\\Desktop\\Pullmvcproject\\RepositoryModel\\RepositoryModel.csproj"
             }
           }
         }

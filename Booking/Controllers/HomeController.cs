@@ -2,6 +2,7 @@
 using BookingLibrary.Models;
 using Microsoft.AspNetCore.Mvc;
 using RepositoryEF;
+using RepositoryPatternWithUOW.Core.Repository;
 using System.Diagnostics;
 
 namespace Booking.Controllers
@@ -9,13 +10,13 @@ namespace Booking.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        ApplicationDbContext context;
+        private readonly IUnitOfWorkRepository UnitOfWork;
 
 
-        public HomeController(ILogger<HomeController> logger, ApplicationDbContext context)
+        public HomeController(ILogger<HomeController> logger, IUnitOfWorkRepository _UnitOfWork)
         {
             _logger = logger;
-            this.context = context;
+            this.UnitOfWork = _UnitOfWork;
         }
 
         public IActionResult Index()
@@ -26,7 +27,7 @@ namespace Booking.Controllers
         {
             string repedcity = "";
             List<string> cities = new List<string>();
-            List<Hotel> hotels = context.Hotels.OrderBy(h => h.City).ToList();
+            List<Hotel> hotels = UnitOfWork.Hotels.Orderbycity();
             foreach (Hotel hotel in hotels)
             {
                 if (hotel.City != repedcity)

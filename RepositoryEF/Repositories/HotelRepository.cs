@@ -49,5 +49,28 @@ namespace RepositoryEF.Repositories
 
             return context.Suits.Include(e => e.Room).ThenInclude(e => e.images).FirstOrDefault(e => e.Room.HotelId == id);
         }
+        public List<Hotel> Orderbycity()
+        {
+            List<Hotel> hotels = context.Hotels.OrderBy(h => h.City).ToList();
+            return hotels;
+        }
+
+
+        public List<Hotel> GetHotelsbaseRoom(bool? IsRoom, int Customer, string city)
+        {
+            if (IsRoom != null)
+            {
+                List<Hotel> hotels = context.Hotels.Include(r => r.rooms.Where(i => i.NumOfAdults <= Customer && i.IsNormalRoom == IsRoom && i.IsDeleted == false)).ToList()
+                        .Where(h => h.rooms.Count > 0 && h.City == city && h.IsDeleted == false).ToList();
+                return hotels;
+            }
+            else
+            {
+                List<Hotel> hotels = context.Hotels.Include(r => r.rooms.Where(i => i.NumOfAdults <= Customer && i.IsDeleted == false)).ToList()
+                .Where(h => h.rooms.Count > 0 && h.City == city && h.IsDeleted == false).ToList();
+                return hotels;
+            }
+        }
+
     }
 }

@@ -372,3 +372,20 @@ C:\Users\Amoun\Desktop\New folder (15)\RepositoryEF\obj\Debug\net7.0\refint\Repo
 C:\Users\Amoun\Desktop\New folder (15)\RepositoryEF\obj\Debug\net7.0\RepositoryEF.pdb
 C:\Users\Amoun\Desktop\New folder (15)\RepositoryEF\obj\Debug\net7.0\RepositoryEF.genruntimeconfig.cache
 C:\Users\Amoun\Desktop\New folder (15)\RepositoryEF\obj\Debug\net7.0\ref\RepositoryEF.dll
+C:\Users\TEMP.DESKTOP-TOJ495J.000.001\Desktop\Pullmvcproject\RepositoryEF\bin\Debug\net7.0\RepositoryEF.deps.json
+C:\Users\TEMP.DESKTOP-TOJ495J.000.001\Desktop\Pullmvcproject\RepositoryEF\bin\Debug\net7.0\RepositoryEF.runtimeconfig.json
+C:\Users\TEMP.DESKTOP-TOJ495J.000.001\Desktop\Pullmvcproject\RepositoryEF\bin\Debug\net7.0\RepositoryEF.dll
+C:\Users\TEMP.DESKTOP-TOJ495J.000.001\Desktop\Pullmvcproject\RepositoryEF\bin\Debug\net7.0\RepositoryEF.pdb
+C:\Users\TEMP.DESKTOP-TOJ495J.000.001\Desktop\Pullmvcproject\RepositoryEF\bin\Debug\net7.0\RepositoryModel.dll
+C:\Users\TEMP.DESKTOP-TOJ495J.000.001\Desktop\Pullmvcproject\RepositoryEF\bin\Debug\net7.0\RepositoryModel.pdb
+C:\Users\TEMP.DESKTOP-TOJ495J.000.001\Desktop\Pullmvcproject\RepositoryEF\obj\Debug\net7.0\RepositoryEF.csproj.AssemblyReference.cache
+C:\Users\TEMP.DESKTOP-TOJ495J.000.001\Desktop\Pullmvcproject\RepositoryEF\obj\Debug\net7.0\RepositoryEF.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\TEMP.DESKTOP-TOJ495J.000.001\Desktop\Pullmvcproject\RepositoryEF\obj\Debug\net7.0\RepositoryEF.AssemblyInfoInputs.cache
+C:\Users\TEMP.DESKTOP-TOJ495J.000.001\Desktop\Pullmvcproject\RepositoryEF\obj\Debug\net7.0\RepositoryEF.AssemblyInfo.cs
+C:\Users\TEMP.DESKTOP-TOJ495J.000.001\Desktop\Pullmvcproject\RepositoryEF\obj\Debug\net7.0\RepositoryEF.csproj.CoreCompileInputs.cache
+C:\Users\TEMP.DESKTOP-TOJ495J.000.001\Desktop\Pullmvcproject\RepositoryEF\obj\Debug\net7.0\RepositoryEF.csproj.CopyComplete
+C:\Users\TEMP.DESKTOP-TOJ495J.000.001\Desktop\Pullmvcproject\RepositoryEF\obj\Debug\net7.0\RepositoryEF.dll
+C:\Users\TEMP.DESKTOP-TOJ495J.000.001\Desktop\Pullmvcproject\RepositoryEF\obj\Debug\net7.0\refint\RepositoryEF.dll
+C:\Users\TEMP.DESKTOP-TOJ495J.000.001\Desktop\Pullmvcproject\RepositoryEF\obj\Debug\net7.0\RepositoryEF.pdb
+C:\Users\TEMP.DESKTOP-TOJ495J.000.001\Desktop\Pullmvcproject\RepositoryEF\obj\Debug\net7.0\RepositoryEF.genruntimeconfig.cache
+C:\Users\TEMP.DESKTOP-TOJ495J.000.001\Desktop\Pullmvcproject\RepositoryEF\obj\Debug\net7.0\ref\RepositoryEF.dll
