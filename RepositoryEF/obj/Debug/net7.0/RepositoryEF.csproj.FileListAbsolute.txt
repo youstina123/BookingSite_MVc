@@ -355,3 +355,20 @@ C:\Users\M.Essam\Desktop\Last MVCPj\RepositoryEF\bin\Debug\net7.0\RepositoryMode
 C:\Users\M.Essam\Desktop\Last MVCPj\RepositoryEF\obj\Debug\net7.0\RepositoryEF.csproj.CopyComplete
 C:\Users\M.Essam\Desktop\Last MVCPj\RepositoryEF\obj\Debug\net7.0\RepositoryEF.genruntimeconfig.cache
 C:\Users\M.Essam\Desktop\Last MVCPj\RepositoryEF\obj\Debug\net7.0\ref\RepositoryEF.dll
+C:\Users\Amoun\Desktop\New folder (15)\RepositoryEF\bin\Debug\net7.0\RepositoryEF.deps.json
+C:\Users\Amoun\Desktop\New folder (15)\RepositoryEF\bin\Debug\net7.0\RepositoryEF.runtimeconfig.json
+C:\Users\Amoun\Desktop\New folder (15)\RepositoryEF\bin\Debug\net7.0\RepositoryEF.dll
+C:\Users\Amoun\Desktop\New folder (15)\RepositoryEF\bin\Debug\net7.0\RepositoryEF.pdb
+C:\Users\Amoun\Desktop\New folder (15)\RepositoryEF\bin\Debug\net7.0\RepositoryModel.dll
+C:\Users\Amoun\Desktop\New folder (15)\RepositoryEF\bin\Debug\net7.0\RepositoryModel.pdb
+C:\Users\Amoun\Desktop\New folder (15)\RepositoryEF\obj\Debug\net7.0\RepositoryEF.csproj.AssemblyReference.cache
+C:\Users\Amoun\Desktop\New folder (15)\RepositoryEF\obj\Debug\net7.0\RepositoryEF.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Amoun\Desktop\New folder (15)\RepositoryEF\obj\Debug\net7.0\RepositoryEF.AssemblyInfoInputs.cache
+C:\Users\Amoun\Desktop\New folder (15)\RepositoryEF\obj\Debug\net7.0\RepositoryEF.AssemblyInfo.cs
+C:\Users\Amoun\Desktop\New folder (15)\RepositoryEF\obj\Debug\net7.0\RepositoryEF.csproj.CoreCompileInputs.cache
+C:\Users\Amoun\Desktop\New folder (15)\RepositoryEF\obj\Debug\net7.0\RepositoryEF.csproj.CopyComplete
+C:\Users\Amoun\Desktop\New folder (15)\RepositoryEF\obj\Debug\net7.0\RepositoryEF.dll
+C:\Users\Amoun\Desktop\New folder (15)\RepositoryEF\obj\Debug\net7.0\refint\RepositoryEF.dll
+C:\Users\Amoun\Desktop\New folder (15)\RepositoryEF\obj\Debug\net7.0\RepositoryEF.pdb
+C:\Users\Amoun\Desktop\New folder (15)\RepositoryEF\obj\Debug\net7.0\RepositoryEF.genruntimeconfig.cache
+C:\Users\Amoun\Desktop\New folder (15)\RepositoryEF\obj\Debug\net7.0\ref\RepositoryEF.dll

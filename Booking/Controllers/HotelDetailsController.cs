@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using RepositoryEF;
 using RepositoryModel.Models;
+using RepositoryPatternWithUOW.Core.Repository;
 
 namespace Booking.Controllers
 {
@@ -10,26 +11,33 @@ namespace Booking.Controllers
     {
         AppUser userModel = new AppUser();
         ApplicationDbContext context = new ApplicationDbContext();
+        IUnitOfWorkRepository unitOfWorkRepository;
 
+        public HotelDetailsController(IUnitOfWorkRepository unitOfWorkRepository)
+        {
+            this.unitOfWorkRepository = unitOfWorkRepository;
+            //   this.hotelRepository = hotelRepository;
+
+        }
 
         //kermena
 
-        public IActionResult getPhotos(int id)
+        public async Task<IActionResult>  getPhotos(int id)
         {
-            Hotel hotel = context.Hotels.Where(e => e.Id == id).FirstOrDefault();
-            List<string> photos = context.image.Where(e => e.HotelId == id).Select(e => e.Name).ToList();
-            List<Review> reviews = context.Reviews.Where(i => i.IsDeleted == false && i.HotelId == id).OrderByDescending(d => d.Id).Take(8).Include(c => c.Customer).ThenInclude(a => a.AppUser).ToList();
+            Hotel hotel = await unitOfWorkRepository.Hotels.FindAsync(e => e.Id == id);
+            List<string> photos = unitOfWorkRepository.hotels.getphoto(id);
+            List<Review> reviews = unitOfWorkRepository.hotels.getReviews(id);
 
-            List<Normal_Room> Rooms = new List<Normal_Room>();
-            for (int i = 0; i < 4; i++)
-            {
-                Normal_Room room = context.normal_Rooms.Include(e => e.Room).ThenInclude(e => e.images).FirstOrDefault(e => e.Room.HotelId == id && ((int)e.Type_Of_Room) == i);
-                if (room != null)
-                {
-                    Rooms.Add(room);
-                }
-            }
-            Suit suit = context.Suits.Include(e => e.Room).ThenInclude(e => e.images).FirstOrDefault(e => e.Room.HotelId == id);
+            //List<Normal_Room> Rooms = new List<Normal_Room>();
+            //for (int i = 0; i < 4; i++)
+            //{
+            //    Normal_Room room = context.normal_Rooms.Include(e => e.Room).ThenInclude(e => e.images).FirstOrDefault(e => e.Room.HotelId == id && ((int)e.Type_Of_Room) == i);
+            //    if (room != null)
+            //    {
+            //        Rooms.Add(room);
+            //    }
+            //}
+            Suit suit = unitOfWorkRepository.hotels.getsuit(id);
 
             string userName = "";
             if (User.Identity.IsAuthenticated)
@@ -40,7 +48,7 @@ namespace Booking.Controllers
 
             ViewData["Reviews"] = reviews;
             ViewData["photo"] = photos;
-            ViewData["normal"] = Rooms;
+            ViewData["normal"] = unitOfWorkRepository.hotels.getrooms(id);
             ViewData["Suit"] = suit;
 
 

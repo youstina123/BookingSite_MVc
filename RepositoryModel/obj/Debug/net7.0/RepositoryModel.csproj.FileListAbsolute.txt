@@ -250,3 +250,15 @@ C:\Users\M.Essam\Desktop\Last MVCPj\RepositoryModel\obj\Debug\net7.0\RepositoryM
 C:\Users\M.Essam\Desktop\Last MVCPj\RepositoryModel\obj\Debug\net7.0\refint\RepositoryModel.dll
 C:\Users\M.Essam\Desktop\Last MVCPj\RepositoryModel\obj\Debug\net7.0\RepositoryModel.pdb
 C:\Users\M.Essam\Desktop\Last MVCPj\RepositoryModel\obj\Debug\net7.0\ref\RepositoryModel.dll
+C:\Users\Amoun\Desktop\New folder (15)\RepositoryModel\bin\Debug\net7.0\RepositoryModel.deps.json
+C:\Users\Amoun\Desktop\New folder (15)\RepositoryModel\bin\Debug\net7.0\RepositoryModel.dll
+C:\Users\Amoun\Desktop\New folder (15)\RepositoryModel\bin\Debug\net7.0\RepositoryModel.pdb
+C:\Users\Amoun\Desktop\New folder (15)\RepositoryModel\obj\Debug\net7.0\RepositoryModel.csproj.AssemblyReference.cache
+C:\Users\Amoun\Desktop\New folder (15)\RepositoryModel\obj\Debug\net7.0\RepositoryModel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Amoun\Desktop\New folder (15)\RepositoryModel\obj\Debug\net7.0\RepositoryModel.AssemblyInfoInputs.cache
+C:\Users\Amoun\Desktop\New folder (15)\RepositoryModel\obj\Debug\net7.0\RepositoryModel.AssemblyInfo.cs
+C:\Users\Amoun\Desktop\New folder (15)\RepositoryModel\obj\Debug\net7.0\RepositoryModel.csproj.CoreCompileInputs.cache
+C:\Users\Amoun\Desktop\New folder (15)\RepositoryModel\obj\Debug\net7.0\RepositoryModel.dll
+C:\Users\Amoun\Desktop\New folder (15)\RepositoryModel\obj\Debug\net7.0\refint\RepositoryModel.dll
+C:\Users\Amoun\Desktop\New folder (15)\RepositoryModel\obj\Debug\net7.0\RepositoryModel.pdb
+C:\Users\Amoun\Desktop\New folder (15)\RepositoryModel\obj\Debug\net7.0\ref\RepositoryModel.dll

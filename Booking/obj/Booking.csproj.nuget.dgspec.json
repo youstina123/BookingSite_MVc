@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Al Lewaa Company\\Desktop\\New folder\\Booking\\Booking.csproj": {}
+    "C:\\Users\\Amoun\\Desktop\\New folder (15)\\Booking\\Booking.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Al Lewaa Company\\Desktop\\New folder\\Booking\\Booking.csproj": {
+    "C:\\Users\\Amoun\\Desktop\\New folder (15)\\Booking\\Booking.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Al Lewaa Company\\Desktop\\New folder\\Booking\\Booking.csproj",
+        "projectUniqueName": "C:\\Users\\Amoun\\Desktop\\New folder (15)\\Booking\\Booking.csproj",
         "projectName": "Booking",
-        "projectPath": "C:\\Users\\Al Lewaa Company\\Desktop\\New folder\\Booking\\Booking.csproj",
-        "packagesPath": "C:\\Users\\Al Lewaa Company\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Al Lewaa Company\\Desktop\\New folder\\Booking\\obj\\",
+        "projectPath": "C:\\Users\\Amoun\\Desktop\\New folder (15)\\Booking\\Booking.csproj",
+        "packagesPath": "C:\\Users\\Amoun\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Amoun\\Desktop\\New folder (15)\\Booking\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Al Lewaa Company\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Amoun\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +28,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Al Lewaa Company\\Desktop\\New folder\\RepositoryEF\\RepositoryEF.csproj": {
-                "projectPath": "C:\\Users\\Al Lewaa Company\\Desktop\\New folder\\RepositoryEF\\RepositoryEF.csproj"
+              "C:\\Users\\Amoun\\Desktop\\New folder (15)\\RepositoryEF\\RepositoryEF.csproj": {
+                "projectPath": "C:\\Users\\Amoun\\Desktop\\New folder (15)\\RepositoryEF\\RepositoryEF.csproj"
               }
             }
           }
@@ -90,17 +90,17 @@
         }
       }
     },
-    "C:\\Users\\Al Lewaa Company\\Desktop\\New folder\\RepositoryEF\\RepositoryEF.csproj": {
+    "C:\\Users\\Amoun\\Desktop\\New folder (15)\\RepositoryEF\\RepositoryEF.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Al Lewaa Company\\Desktop\\New folder\\RepositoryEF\\RepositoryEF.csproj",
+        "projectUniqueName": "C:\\Users\\Amoun\\Desktop\\New folder (15)\\RepositoryEF\\RepositoryEF.csproj",
         "projectName": "RepositoryEF",
-        "projectPath": "C:\\Users\\Al Lewaa Company\\Desktop\\New folder\\RepositoryEF\\RepositoryEF.csproj",
-        "packagesPath": "C:\\Users\\Al Lewaa Company\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Al Lewaa Company\\Desktop\\New folder\\RepositoryEF\\obj\\",
+        "projectPath": "C:\\Users\\Amoun\\Desktop\\New folder (15)\\RepositoryEF\\RepositoryEF.csproj",
+        "packagesPath": "C:\\Users\\Amoun\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Amoun\\Desktop\\New folder (15)\\RepositoryEF\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Al Lewaa Company\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Amoun\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -114,8 +114,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Al Lewaa Company\\Desktop\\New folder\\RepositoryModel\\RepositoryModel.csproj": {
-                "projectPath": "C:\\Users\\Al Lewaa Company\\Desktop\\New folder\\RepositoryModel\\RepositoryModel.csproj"
+              "C:\\Users\\Amoun\\Desktop\\New folder (15)\\RepositoryModel\\RepositoryModel.csproj": {
+                "projectPath": "C:\\Users\\Amoun\\Desktop\\New folder (15)\\RepositoryModel\\RepositoryModel.csproj"
               }
             }
           }
@@ -165,17 +165,17 @@
         }
       }
     },
-    "C:\\Users\\Al Lewaa Company\\Desktop\\New folder\\RepositoryModel\\RepositoryModel.csproj": {
+    "C:\\Users\\Amoun\\Desktop\\New folder (15)\\RepositoryModel\\RepositoryModel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Al Lewaa Company\\Desktop\\New folder\\RepositoryModel\\RepositoryModel.csproj",
+        "projectUniqueName": "C:\\Users\\Amoun\\Desktop\\New folder (15)\\RepositoryModel\\RepositoryModel.csproj",
         "projectName": "RepositoryModel",
-        "projectPath": "C:\\Users\\Al Lewaa Company\\Desktop\\New folder\\RepositoryModel\\RepositoryModel.csproj",
-        "packagesPath": "C:\\Users\\Al Lewaa Company\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Al Lewaa Company\\Desktop\\New folder\\RepositoryModel\\obj\\",
+        "projectPath": "C:\\Users\\Amoun\\Desktop\\New folder (15)\\RepositoryModel\\RepositoryModel.csproj",
+        "packagesPath": "C:\\Users\\Amoun\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Amoun\\Desktop\\New folder (15)\\RepositoryModel\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Al Lewaa Company\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Amoun\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
