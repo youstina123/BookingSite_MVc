@@ -226,10 +226,19 @@
                             <i class="fa-solid fa-utensils" style="font-size: 30PX;color: black;margin-right: 30px;"></i>
                             <a href="~/Restaurant/Index"><h3 class="heading mb-3" style="font-size: 21px;color: #8d703b;">Restaurant Bar</h3></a>
                         </div>
+                        </div>
                     </div>
                 </div>
-
-                <a href="~/Payment/Index" class="tag-cloud-link text-bg-secondary align-text-center"> Make Reserve Now </a>
+                  @if (User.Identity.IsAuthenticated)
+                {
+                   <a href="~/Payment/Index" class="tag-cloud-link text-bg-secondary align-text-center"> Make Reserve Now </a>
+                }
+                else
+                {
+                    <div class="sidebar-box ftco-animate">
+                        <h3>please Login to Make Reserve</h3>
+                    </div>
+                }
             </div>
         </div>
     </div>

@@ -389,3 +389,20 @@ C:\Users\TEMP.DESKTOP-TOJ495J.000.001\Desktop\Pullmvcproject\RepositoryEF\obj\De
 C:\Users\TEMP.DESKTOP-TOJ495J.000.001\Desktop\Pullmvcproject\RepositoryEF\obj\Debug\net7.0\RepositoryEF.pdb
 C:\Users\TEMP.DESKTOP-TOJ495J.000.001\Desktop\Pullmvcproject\RepositoryEF\obj\Debug\net7.0\RepositoryEF.genruntimeconfig.cache
 C:\Users\TEMP.DESKTOP-TOJ495J.000.001\Desktop\Pullmvcproject\RepositoryEF\obj\Debug\net7.0\ref\RepositoryEF.dll
+C:\Users\Amoun\Desktop\New folder (16)\RepositoryEF\bin\Debug\net7.0\RepositoryEF.deps.json
+C:\Users\Amoun\Desktop\New folder (16)\RepositoryEF\bin\Debug\net7.0\RepositoryEF.runtimeconfig.json
+C:\Users\Amoun\Desktop\New folder (16)\RepositoryEF\bin\Debug\net7.0\RepositoryEF.dll
+C:\Users\Amoun\Desktop\New folder (16)\RepositoryEF\bin\Debug\net7.0\RepositoryEF.pdb
+C:\Users\Amoun\Desktop\New folder (16)\RepositoryEF\bin\Debug\net7.0\RepositoryModel.dll
+C:\Users\Amoun\Desktop\New folder (16)\RepositoryEF\bin\Debug\net7.0\RepositoryModel.pdb
+C:\Users\Amoun\Desktop\New folder (16)\RepositoryEF\obj\Debug\net7.0\RepositoryEF.csproj.AssemblyReference.cache
+C:\Users\Amoun\Desktop\New folder (16)\RepositoryEF\obj\Debug\net7.0\RepositoryEF.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Amoun\Desktop\New folder (16)\RepositoryEF\obj\Debug\net7.0\RepositoryEF.AssemblyInfoInputs.cache
+C:\Users\Amoun\Desktop\New folder (16)\RepositoryEF\obj\Debug\net7.0\RepositoryEF.AssemblyInfo.cs
+C:\Users\Amoun\Desktop\New folder (16)\RepositoryEF\obj\Debug\net7.0\RepositoryEF.csproj.CoreCompileInputs.cache
+C:\Users\Amoun\Desktop\New folder (16)\RepositoryEF\obj\Debug\net7.0\RepositoryEF.csproj.CopyComplete
+C:\Users\Amoun\Desktop\New folder (16)\RepositoryEF\obj\Debug\net7.0\RepositoryEF.dll
+C:\Users\Amoun\Desktop\New folder (16)\RepositoryEF\obj\Debug\net7.0\refint\RepositoryEF.dll
+C:\Users\Amoun\Desktop\New folder (16)\RepositoryEF\obj\Debug\net7.0\RepositoryEF.pdb
+C:\Users\Amoun\Desktop\New folder (16)\RepositoryEF\obj\Debug\net7.0\RepositoryEF.genruntimeconfig.cache
+C:\Users\Amoun\Desktop\New folder (16)\RepositoryEF\obj\Debug\net7.0\ref\RepositoryEF.dll

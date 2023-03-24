@@ -39,7 +39,7 @@ namespace RepositoryEF
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Data Source =DESKTOP-TOJ495J\\SQL19; Initial Catalog = Booking_hSystem; Integrated Security = True; trust server certificate = true");
+            optionsBuilder.UseSqlServer("Data Source =Karmina; Initial Catalog = Booking_hSystem; Integrated Security = True; trust server certificate = true");
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

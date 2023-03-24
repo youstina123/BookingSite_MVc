@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\TEMP.DESKTOP-TOJ495J.000.001\\Desktop\\Pullmvcproject\\Booking\\Booking.csproj": {}
+    "C:\\Users\\Amoun\\Desktop\\New folder (16)\\Booking\\Booking.csproj": {}
   },
   "projects": {
-    "C:\\Users\\TEMP.DESKTOP-TOJ495J.000.001\\Desktop\\Pullmvcproject\\Booking\\Booking.csproj": {
+    "C:\\Users\\Amoun\\Desktop\\New folder (16)\\Booking\\Booking.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\TEMP.DESKTOP-TOJ495J.000.001\\Desktop\\Pullmvcproject\\Booking\\Booking.csproj",
+        "projectUniqueName": "C:\\Users\\Amoun\\Desktop\\New folder (16)\\Booking\\Booking.csproj",
         "projectName": "Booking",
-        "projectPath": "C:\\Users\\TEMP.DESKTOP-TOJ495J.000.001\\Desktop\\Pullmvcproject\\Booking\\Booking.csproj",
-        "packagesPath": "C:\\Users\\TEMP.DESKTOP-TOJ495J.000.001\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\TEMP.DESKTOP-TOJ495J.000.001\\Desktop\\Pullmvcproject\\Booking\\obj\\",
+        "projectPath": "C:\\Users\\Amoun\\Desktop\\New folder (16)\\Booking\\Booking.csproj",
+        "packagesPath": "C:\\Users\\Amoun\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Amoun\\Desktop\\New folder (16)\\Booking\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\TEMP.DESKTOP-TOJ495J.000.001\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Amoun\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +28,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\TEMP.DESKTOP-TOJ495J.000.001\\Desktop\\Pullmvcproject\\RepositoryEF\\RepositoryEF.csproj": {
-                "projectPath": "C:\\Users\\TEMP.DESKTOP-TOJ495J.000.001\\Desktop\\Pullmvcproject\\RepositoryEF\\RepositoryEF.csproj"
+              "C:\\Users\\Amoun\\Desktop\\New folder (16)\\RepositoryEF\\RepositoryEF.csproj": {
+                "projectPath": "C:\\Users\\Amoun\\Desktop\\New folder (16)\\RepositoryEF\\RepositoryEF.csproj"
               }
             }
           }
@@ -90,17 +90,17 @@
         }
       }
     },
-    "C:\\Users\\TEMP.DESKTOP-TOJ495J.000.001\\Desktop\\Pullmvcproject\\RepositoryEF\\RepositoryEF.csproj": {
+    "C:\\Users\\Amoun\\Desktop\\New folder (16)\\RepositoryEF\\RepositoryEF.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\TEMP.DESKTOP-TOJ495J.000.001\\Desktop\\Pullmvcproject\\RepositoryEF\\RepositoryEF.csproj",
+        "projectUniqueName": "C:\\Users\\Amoun\\Desktop\\New folder (16)\\RepositoryEF\\RepositoryEF.csproj",
         "projectName": "RepositoryEF",
-        "projectPath": "C:\\Users\\TEMP.DESKTOP-TOJ495J.000.001\\Desktop\\Pullmvcproject\\RepositoryEF\\RepositoryEF.csproj",
-        "packagesPath": "C:\\Users\\TEMP.DESKTOP-TOJ495J.000.001\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\TEMP.DESKTOP-TOJ495J.000.001\\Desktop\\Pullmvcproject\\RepositoryEF\\obj\\",
+        "projectPath": "C:\\Users\\Amoun\\Desktop\\New folder (16)\\RepositoryEF\\RepositoryEF.csproj",
+        "packagesPath": "C:\\Users\\Amoun\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Amoun\\Desktop\\New folder (16)\\RepositoryEF\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\TEMP.DESKTOP-TOJ495J.000.001\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Amoun\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -114,8 +114,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\TEMP.DESKTOP-TOJ495J.000.001\\Desktop\\Pullmvcproject\\RepositoryModel\\RepositoryModel.csproj": {
-                "projectPath": "C:\\Users\\TEMP.DESKTOP-TOJ495J.000.001\\Desktop\\Pullmvcproject\\RepositoryModel\\RepositoryModel.csproj"
+              "C:\\Users\\Amoun\\Desktop\\New folder (16)\\RepositoryModel\\RepositoryModel.csproj": {
+                "projectPath": "C:\\Users\\Amoun\\Desktop\\New folder (16)\\RepositoryModel\\RepositoryModel.csproj"
               }
             }
           }
@@ -165,17 +165,17 @@
         }
       }
     },
-    "C:\\Users\\TEMP.DESKTOP-TOJ495J.000.001\\Desktop\\Pullmvcproject\\RepositoryModel\\RepositoryModel.csproj": {
+    "C:\\Users\\Amoun\\Desktop\\New folder (16)\\RepositoryModel\\RepositoryModel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\TEMP.DESKTOP-TOJ495J.000.001\\Desktop\\Pullmvcproject\\RepositoryModel\\RepositoryModel.csproj",
+        "projectUniqueName": "C:\\Users\\Amoun\\Desktop\\New folder (16)\\RepositoryModel\\RepositoryModel.csproj",
         "projectName": "RepositoryModel",
-        "projectPath": "C:\\Users\\TEMP.DESKTOP-TOJ495J.000.001\\Desktop\\Pullmvcproject\\RepositoryModel\\RepositoryModel.csproj",
-        "packagesPath": "C:\\Users\\TEMP.DESKTOP-TOJ495J.000.001\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\TEMP.DESKTOP-TOJ495J.000.001\\Desktop\\Pullmvcproject\\RepositoryModel\\obj\\",
+        "projectPath": "C:\\Users\\Amoun\\Desktop\\New folder (16)\\RepositoryModel\\RepositoryModel.csproj",
+        "packagesPath": "C:\\Users\\Amoun\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Amoun\\Desktop\\New folder (16)\\RepositoryModel\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\TEMP.DESKTOP-TOJ495J.000.001\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Amoun\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
