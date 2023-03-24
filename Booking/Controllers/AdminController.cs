@@ -150,8 +150,11 @@ namespace Booking.Controllers
             AppUser hotel_Manager=unitOfWorkRepository.AppUsers.GetByIDString(id);
 
            // AppUser hotel_Manager = context.AppUsers.FirstOrDefault(h => h.Id == id); 
+           Hotel hotel=await unitOfWorkRepository.Hotels.FindAsync(h=>h.Hotel_ManagerId==id);
+            hotel.IsConfermed= true;
 
-          await userManager.AddToRoleAsync(hotel_Manager,"HotelManger");
+            unitOfWorkRepository.Hotels.Update(hotel);
+            await userManager.AddToRoleAsync(hotel_Manager,"HotelManger");
             return RedirectToAction("AdminNotifications");
             
         }

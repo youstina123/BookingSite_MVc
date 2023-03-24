@@ -28,5 +28,10 @@ namespace BookingWebSite.ViewModel
         [DataType(DataType.Password)]
         [Compare("Password")]
         public string ConfirmPassword { get; set; }
+        [Required]
+        public string Country { get; set; }
+
+        [Required]
+        public string City { get; set; }
     }
 }

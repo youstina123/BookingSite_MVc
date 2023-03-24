@@ -1,7 +1,7 @@
 ﻿@{
     Layout = "~/Views/Shared/_ContentLayout.cshtml";
 }
-@RenderBody()
+
 @*<section class="instagram pt-5">
     <div class="container-fluid">
         <div class="row no-gutters justify-content-center pb-5">
@@ -49,6 +49,7 @@
     </div>
 </section>
 *@
+@RenderBody()
 @await RenderSectionAsync("Scripts", required: false)
 
 <script src="js/jquery.min.js"></script>

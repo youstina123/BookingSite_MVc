@@ -43,6 +43,9 @@ namespace Booking.Controllers
             if (ModelState.IsValid)
             {
                 AppUser userModel = new AppUser();
+                userModel.Country= userRegister.Country;
+                userModel.City= userRegister.City;
+                userModel.Street = userRegister.Address;
                 userModel.UserName = userRegister.Name;
                 userModel.PasswordHash = userRegister.Password;
                 userModel.Email = userRegister.Email;
@@ -146,11 +149,14 @@ namespace Booking.Controllers
                 userModel.PasswordHash = partnerRegester.Password;
                 userModel.Email = partnerRegester.Email;
                 userModel.PhoneNumber = partnerRegester.PhoneNumber;
+                userModel.City= partnerRegester.City;
+                userModel.Country= partnerRegester.Country;
+             
 
                 hotel.Name = partnerRegester.HotelName;
                 hotel.Street = partnerRegester.HotelStreet;
                 hotel.Description = partnerRegester.HotelDescription;
-                hotel.Country = partnerRegester.State;
+                hotel.Country = partnerRegester.Country;
                 hotel.City = partnerRegester.City;
 
 
@@ -186,16 +192,19 @@ namespace Booking.Controllers
                 {
                     await signInManager.SignInAsync(userModel, false);
 
+
                     hotel_Manager.AppUserId = userModel.Id;
+
                     unitOfWorkRepository.Hotels.Add(hotel);
 
                     hotel_Manager.HotelId = hotel.Id;
 
 
                     hotel.Hotel_ManagerId = userModel.Id;
+
                     unitOfWorkRepository.HotelManagers.Add(hotel_Manager);
 
-
+                    unitOfWorkRepository.Hotels.Update(hotel);
 
 
 

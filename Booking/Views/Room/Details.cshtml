@@ -139,11 +139,12 @@
         </div> <!-- .col-md-8 -->
         <div class="col-lg-4 sidebar ftco-animate">
             <div class="sidebar-box">
-                <form asp-action="PaymentDetails" asp-controller="Payment">
+                <form >
                     <label for="Days">Number Of Days</label>
                     <input name="Days" id="Days" type="number" />
-                    <input type="submit" value="Make Reserve Now" />
-                    <input type="number" value="@Model.Id" hidden name="Id" />
+                    <input type="number" value="@Model.Id" hidden name="Id" id="userid" />
+                    <input type="button" value="Make Reserve Now" onclick="sendValue()" />
+                    
                 </form>
               @*  @using (Html.BeginForm("PaymentDetails", "Payment", new { id = Model.Id }, FormMethod.Post))
                 {
@@ -287,8 +288,21 @@
 
     @section Scripts{
 
+
+
         <script src="~/lib/microsoft-signalr/signalr.min.js"></script>
         <script>
+
+            function sendValue() {
+                var inputElement = document.getElementById("Days");
+                var value = inputElement.value;
+                var user = document.getElementById("userid")
+                var userval=user.value;
+                
+                var url = "/Payment/PaymentDetails/"+userval+"?days="+value;
+            
+                window.location.pathname = url;
+            }
             console.log("ccess");
 
             var hub = new signalR.HubConnectionBuilder().withUrl("/Review").build();
@@ -315,5 +329,7 @@
                 console.log(name + ":" + cmnt);
                 hub.invoke("NewRoomComment", name, cmnt, @Model.HotelId, id);
             }
+
+
         </script>
     }

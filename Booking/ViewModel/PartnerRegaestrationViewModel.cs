@@ -30,7 +30,7 @@ namespace Booking.ViewModel
         public string ConfirmPassword { get; set; }
 
         [Required]
-        public string State { get; set; }
+        public string Country { get; set; }
 
         [Required]
         public string City { get; set; }
